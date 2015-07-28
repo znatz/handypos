@@ -88,7 +88,7 @@
     self.navigationItem.leftBarButtonItem.title=@"戻る";//左側のボタンタイトル
     
     _tableview=[[UITableView alloc]init];
-    _tableview.frame = CGRectMake(0, 0, 320, 460-44);
+    _tableview.frame = CGRectMake(0, 0, [self.view frame].size.width, [self.view frame].size.height);
     _tableview.dataSource=self;
     _tableview.delegate=self;
     _tableview.rowHeight=100.0;

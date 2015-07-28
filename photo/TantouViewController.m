@@ -95,7 +95,7 @@
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     Tanto * t = tantos[row];
-    return [NSString stringWithFormat:@"%@  :  %@",t._ID,t._name];
+    return [NSString stringWithFormat:@"%@",t._name];
     
 }
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)componen{
