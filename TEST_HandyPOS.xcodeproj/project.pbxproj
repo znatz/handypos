@@ -77,7 +77,6 @@
 		67334E8116144E3200A58302 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		674ADC1C1B5C89010006A23C /* libPrinter_160.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPrinter_160.a; sourceTree = "<group>"; };
 		674ADC201B5C89010006A23C /* CallbackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallbackData.h; sourceTree = "<group>"; };
-		674ADC211B5C89010006A23C /* CPCLPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCLPrinter.h; sourceTree = "<group>"; };
 		674ADC221B5C89010006A23C /* EABluetoothPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EABluetoothPort.h; sourceTree = "<group>"; };
 		674ADC231B5C89010006A23C /* ESCPOSPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESCPOSPrinter.h; sourceTree = "<group>"; };
 		674ADC241B5C89010006A23C /* POSPrinterFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSPrinterFinder.h; sourceTree = "<group>"; };
@@ -237,7 +236,6 @@
 			isa = PBXGroup;
 			children = (
 				674ADC201B5C89010006A23C /* CallbackData.h */,
-				674ADC211B5C89010006A23C /* CPCLPrinter.h */,
 				674ADC221B5C89010006A23C /* EABluetoothPort.h */,
 				674ADC231B5C89010006A23C /* ESCPOSPrinter.h */,
 				674ADC241B5C89010006A23C /* POSPrinterFinder.h */,
@@ -616,6 +614,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					67D17B6C15AE7522001ED592 = {
+						DevelopmentTeam = U9ZRHY277J;
+					};
+				};
 			};
 			buildConfigurationList = 67D17B6715AE7522001ED592 /* Build configuration list for PBXProject "TEST_HandyPOS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -777,6 +780,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Noriaki Yanagita (CKYAC8HUGM)";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Noriaki Yanagita (CKYAC8HUGM)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -822,6 +826,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: POSCO, K.K.";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: POSCO, K.K.";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -885,9 +890,9 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = HandyPOS.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: POSCO, K.K.";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: POSCO, K.K.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: POSCO, K.K.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
