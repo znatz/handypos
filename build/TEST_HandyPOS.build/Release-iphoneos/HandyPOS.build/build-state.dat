@@ -1,0 +1,1181 @@
+THandyPOS
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Info.plist photo/HandyPOS-Info.plist
+cPhaseScriptExecution "Check Pods Manifest.lock" /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Script-257DE3073B5E2C1C966774A1.sh
+cProcessPCH /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch.pth photo/HandyPOS-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMResultSet.o /Users/posco/Desktop/cyou/FMDB/FMResultSet.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMDatabase.o /Users/posco/Desktop/cyou/FMDB/FMDatabase.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/main.o /Users/posco/Desktop/cyou/photo/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/AppDelegate.o /Users/posco/Desktop/cyou/photo/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataModels.o /Users/posco/Desktop/cyou/photo/DataModels.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SyoukeiViewController.o /Users/posco/Desktop/cyou/photo/SyoukeiViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SeisanViewController.o /Users/posco/Desktop/cyou/photo/SeisanViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/MainViewController.o /Users/posco/Desktop/cyou/photo/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TantouViewController.o /Users/posco/Desktop/cyou/photo/TantouViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/KosuViewController.o /Users/posco/Desktop/cyou/photo/KosuViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataUpdate.o /Users/posco/Desktop/cyou/photo/DataUpdate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataAzukari.o /Users/posco/Desktop/cyou/photo/DataAzukari.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/BumonViewController.o /Users/posco/Desktop/cyou/photo/BumonViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ModeSelect.o /Users/posco/Desktop/cyou/photo/ModeSelect.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataMente.o /Users/posco/Desktop/cyou/photo/DataMente.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/UriageSettei.o /Users/posco/Desktop/cyou/photo/UriageSettei.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TenpoSettei.o /Users/posco/Desktop/cyou/photo/TenpoSettei.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Seisan.o /Users/posco/Desktop/cyou/Seisan.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nebiki.o /Users/posco/Desktop/cyou/Nebiki.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tanto.o /Users/posco/Desktop/cyou/Tanto.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Bumon.o /Users/posco/Desktop/cyou/Bumon.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Goods.o /Users/posco/Desktop/cyou/Goods.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ViewController.o /Users/posco/Desktop/cyou/photo/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Syoukei.o /Users/posco/Desktop/cyou/Syoukei.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Settings.o /Users/posco/Desktop/cyou/Settings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ShopSettings.o /Users/posco/Desktop/cyou/ShopSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptSettings.o /Users/posco/Desktop/cyou/ReceiptSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ConnectionManager.o /Users/posco/Desktop/cyou/ConnectionManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TransferData.o /Users/posco/Desktop/cyou/TransferData.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Employee.o /Users/posco/Desktop/cyou/Employee.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nikkei.o /Users/posco/Desktop/cyou/Nikkei.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tenpo.o /Users/posco/Desktop/cyou/Tenpo.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Printer.o /Users/posco/Desktop/cyou/Printer.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptConnectionSetup.o /Users/posco/Desktop/cyou/photo/ReceiptConnectionSetup.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/HandyPOS normal armv7
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+c0000000055AE086C0000000000000132
+t1437468780
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c0000000051A7EE2A00000000006B1F40
+t1369959978
+s7020352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c0000000051A7EE2900000000002C8530
+t1369959977
+s2917680
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000051A7EE2A0000000000322700
+t1369959978
+s3286784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory
+c0000000051A7EE2A000000000003AAA0
+t1369959978
+s240288
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000051A7EE2C000000000062AD10
+t1369959980
+s6466832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c0000000051A7EE3000000000011BCDF0
+t1369959984
+s18599408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libsqlite3.0.dylib
+c0000000051A7EE350000000000121470
+t1369959989
+s1184880
+
+N/Users/posco/Desktop/cyou/Base.lproj/MainStoryboard.storyboard
+c0000000055AE0CAE000000000001C765
+t1437469870
+s116581
+
+N/Users/posco/Desktop/cyou/Bumon.m
+c00000000559DD7F90000000000000122
+t1436407801
+s290
+
+N/Users/posco/Desktop/cyou/ConnectionManager.m
+c0000000055A6158A0000000000001078
+t1436947850
+s4216
+
+N/Users/posco/Desktop/cyou/Default-568h@2x.png
+c00000000515CA2DE00000000000048A2
+t1365025502
+s18594
+
+N/Users/posco/Desktop/cyou/Default.png
+c0000000050DA7E77000000000000F10D
+t1356496503
+s61709
+
+N/Users/posco/Desktop/cyou/Employee.m
+c0000000055A3109500000000000001B2
+t1436749973
+s434
+
+N/Users/posco/Desktop/cyou/FMDB/FMDatabase.m
+c000000004FF3894A00000000000085A8
+t1341360458
+s34216
+
+N/Users/posco/Desktop/cyou/FMDB/FMResultSet.m
+c000000004FF3894A0000000000002F9A
+t1341360458
+s12186
+
+N/Users/posco/Desktop/cyou/Goods.m
+c00000000559B5300000000000000022E
+t1436242688
+s558
+
+N/Users/posco/Desktop/cyou/Nebiki.m
+c00000000559A2BD800000000000002A4
+t1436167128
+s676
+
+N/Users/posco/Desktop/cyou/Nikkei.m
+c0000000055A33E97000000000000018D
+t1436761751
+s397
+
+N/Users/posco/Desktop/cyou/Printer.m
+c0000000055ADDA2C0000000000001847
+t1437456940
+s6215
+
+N/Users/posco/Desktop/cyou/PrinterLibrary/libPrinter_160.a
+c0000000053BB95D600000000001468DC
+t1404802518
+s1337564
+
+N/Users/posco/Desktop/cyou/ReceiptComment.txt
+c0000000055ACB34900000000000000D6
+t1437381449
+s214
+
+N/Users/posco/Desktop/cyou/ReceiptSettings.m
+c00000000559CE34800000000000001D1
+t1436345160
+s465
+
+N/Users/posco/Desktop/cyou/Seisan.m
+c00000000559A256000000000000001D8
+t1436165472
+s472
+
+N/Users/posco/Desktop/cyou/Settings.m
+c00000000559CB0A40000000000000208
+t1436332196
+s520
+
+N/Users/posco/Desktop/cyou/ShopSettings.m
+c00000000559CCF720000000000000190
+t1436340082
+s400
+
+N/Users/posco/Desktop/cyou/Syoukei.m
+c00000000559B770F0000000000000191
+t1436251919
+s401
+
+N/Users/posco/Desktop/cyou/Tanto.m
+c00000000559A34540000000000000122
+t1436169300
+s290
+
+N/Users/posco/Desktop/cyou/Tenpo.m
+c0000000055A625B40000000000000122
+t1436951988
+s290
+
+N/Users/posco/Desktop/cyou/TransferData.m
+c00000000559F72E00000000000000231
+t1436512992
+s561
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app.dSYM
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Base.lproj/MainStoryboard.storyboardc
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Beep.wav
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Default-568h@2x.png
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Default.png
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/HandyPOS
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Icon.png
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Info.plist
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/NoImage.png
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/PkgInfo
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/ReceiptComment.txt
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/back.bmp
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/butin.wav
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button.png
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button01.gif
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button02.gif
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button1.gif
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button2.png
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button3.png
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button4.png
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button_L.png
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button_R.png
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/logo.png
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/Release-iphoneos/libPods.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/AppDelegate.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Bumon.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/BumonViewController.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ConnectionManager.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataAzukari.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataMente.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataModels.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataUpdate.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Employee.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMDatabase.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMResultSet.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Goods.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/HandyPOS.LinkFileList
+c0000000055AE0D270000000000000FD9
+t1437469991
+s4057
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/KosuViewController.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/MainViewController.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ModeSelect.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nebiki.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nikkei.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Printer.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptConnectionSetup.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptSettings.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Seisan.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SeisanViewController.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Settings.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ShopSettings.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Syoukei.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SyoukeiViewController.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tanto.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TantouViewController.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tenpo.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TenpoSettei.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TransferData.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/UriageSettei.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ViewController.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Script-257DE3073B5E2C1C966774A1.sh
+c0000000055AE0D270000000000000103
+t1437469991
+s259
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Script-425F7D9540C4487EECC713D4.sh
+c0000000055AE0D270000000000000049
+t1437469991
+s73
+
+N/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/com.apple.build-tools.platform.validate
+t2
+s0
+
+N/Users/posco/Desktop/cyou/photo/AppDelegate.m
+c0000000055A36EE200000000000007FD
+t1436774114
+s2045
+
+N/Users/posco/Desktop/cyou/photo/Beep.wav
+c000000003AAA4DD20000000000006BB4
+t984239570
+s27572
+
+N/Users/posco/Desktop/cyou/photo/BumonViewController.m
+c0000000055A609350000000000000C78
+t1436944693
+s3192
+
+N/Users/posco/Desktop/cyou/photo/DataAzukari.m
+c0000000055AC99970000000000000B8E
+t1437374871
+s2958
+
+N/Users/posco/Desktop/cyou/photo/DataMente.m
+c00000000559CEF8C0000000000000FD5
+t1436348300
+s4053
+
+N/Users/posco/Desktop/cyou/photo/DataModels.m
+c0000000055AC91060000000000006002
+t1437372678
+s24578
+
+N/Users/posco/Desktop/cyou/photo/DataUpdate.m
+c0000000055A614B6000000000000112C
+t1436947638
+s4396
+
+N/Users/posco/Desktop/cyou/photo/HandyPOS-Prefix.pch
+c000000004FFE3DA20000000000000139
+t1342061986
+s313
+
+N/Users/posco/Desktop/cyou/photo/KosuViewController.m
+c00000000559CA59C0000000000000CF9
+t1436329372
+s3321
+
+N/Users/posco/Desktop/cyou/photo/MainViewController.m
+c0000000055ADEC3D000000000000133D
+t1437461565
+s4925
+
+N/Users/posco/Desktop/cyou/photo/ModeSelect.m
+c00000000559CBFEF00000000000019EE
+t1436336111
+s6638
+
+N/Users/posco/Desktop/cyou/photo/ReceiptConnectionSetup.m
+c0000000055ADEB0E0000000000000C21
+t1437461262
+s3105
+
+N/Users/posco/Desktop/cyou/photo/SeisanViewController.m
+c0000000055ADD6EF0000000000003529
+t1437456111
+s13609
+
+N/Users/posco/Desktop/cyou/photo/SyoukeiViewController.m
+c0000000055A36BEB0000000000001FF3
+t1436773355
+s8179
+
+N/Users/posco/Desktop/cyou/photo/TantouViewController.m
+c0000000055A36BEB000000000000116F
+t1436773355
+s4463
+
+N/Users/posco/Desktop/cyou/photo/TenpoSettei.m
+c0000000055A628520000000000001203
+t1436952658
+s4611
+
+N/Users/posco/Desktop/cyou/photo/UriageSettei.m
+c00000000559CEACD0000000000001073
+t1436347085
+s4211
+
+N/Users/posco/Desktop/cyou/photo/ViewController.m
+c0000000055A4B34B000000000000336B
+t1436857163
+s13163
+
+N/Users/posco/Desktop/cyou/photo/butin.wav
+c0000000041AC1D2E00000000000005BA
+t1101798702
+s1466
+
+N/Users/posco/Desktop/cyou/photo/main.m
+c0000000055A36BEB0000000000000153
+t1436773355
+s339
+
+N/Users/posco/Desktop/cyou/picture/Icon.png
+c0000000050DA80B80000000000005AEA
+t1356497080
+s23274
+
+N/Users/posco/Desktop/cyou/picture/NoImage.png
+c0000000050CAC0D60000000000002052
+t1355464918
+s8274
+
+N/Users/posco/Desktop/cyou/picture/back.bmp
+c00000000510F33E200000000001AFCFA
+t1359950818
+s1768698
+
+N/Users/posco/Desktop/cyou/picture/button.png
+c000000005091E155000000000000017F
+t1351737685
+s383
+
+N/Users/posco/Desktop/cyou/picture/button01.gif
+c0000000051F2470E0000000000002A61
+t1374832398
+s10849
+
+N/Users/posco/Desktop/cyou/picture/button02.gif
+c0000000051F248940000000000000832
+t1374832788
+s2098
+
+N/Users/posco/Desktop/cyou/picture/button1.gif
+c0000000051EF40D000000000000029C8
+t1374634192
+s10696
+
+N/Users/posco/Desktop/cyou/picture/button2.png
+c000000005091E4550000000000000221
+t1351738453
+s545
+
+N/Users/posco/Desktop/cyou/picture/button3.png
+c000000005092163C0000000000000207
+t1351751228
+s519
+
+N/Users/posco/Desktop/cyou/picture/button4.png
+c00000000509223B70000000000000152
+t1351754679
+s338
+
+N/Users/posco/Desktop/cyou/picture/button_L.png
+c0000000050DBD79D0000000000000190
+t1356584861
+s400
+
+N/Users/posco/Desktop/cyou/picture/button_R.png
+c0000000050DBD6C60000000000000191
+t1356584646
+s401
+
+N/Users/posco/Desktop/cyou/picture/logo.png
+c0000000050D815210000000000004D5F
+t1356338465
+s19807
+
+N/var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch.pth
+t2
+s0
+
+Nphoto/HandyPOS-Info.plist
+c0000000051BA6DF200000000000005CC
+t1371172338
+s1484
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies10e8c8a7445ebb41^1570efa7445ebb41^---0#1#0#--18"Check dependencies36"976C2B9B-04FE-4C89-99C0-1D6345799E89-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/AppDelegate.o /Users/posco/Desktop/cyou/photo/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.282662
+e459162792.402142
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/AppDelegate.o
+x/Users/posco/Desktop/cyou/photo/AppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Compile /Users/posco/Desktop/cyou/photo/AppDelegate.m118f48a8445ebb41^fc1b68a8445ebb41^---0#0#0#-19%DVTDocumentLocation2@61"file://localhost/Users/posco/Desktop/cyou/photo/AppDelegate.m0000000000000000^3863"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/AppDelegate.o photo/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/AppDelegate.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/AppDelegate.dia -c /Users/posco/Desktop/cyou/photo/AppDelegate.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/AppDelegate.o36"A021FAB0-4958-4965-8E42-EAE8A5C41B84-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Bumon.o /Users/posco/Desktop/cyou/Bumon.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.227266
+e459162793.269861
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Bumon.o
+x/Users/posco/Desktop/cyou/Bumon.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Compile /Users/posco/Desktop/cyou/Bumon.mc66b3aa9445ebb41^892545a9445ebb41^---0#0#0#-19%DVTDocumentLocation2@49"file://localhost/Users/posco/Desktop/cyou/Bumon.m0000000000000000^3815"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Bumon.o Bumon.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Bumon.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Bumon.dia -c /Users/posco/Desktop/cyou/Bumon.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Bumon.o36"F54EFD62-D710-4841-8B58-150A0371BA9C-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/BumonViewController.o /Users/posco/Desktop/cyou/photo/BumonViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.946484
+e459162793.104477
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/BumonViewController.o
+x/Users/posco/Desktop/cyou/photo/BumonViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/posco/Desktop/cyou/photo/BumonViewController.md387f2a8445ebb41^0bd01aa9445ebb41^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/posco/Desktop/cyou/photo/BumonViewController.m0000000000000000^3911"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/BumonViewController.o photo/BumonViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/BumonViewController.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/BumonViewController.dia -c /Users/posco/Desktop/cyou/photo/BumonViewController.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/BumonViewController.o36"BA1B6F9D-B82E-4B41-B04B-7740E0EC6CFC-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ConnectionManager.o /Users/posco/Desktop/cyou/ConnectionManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.353859
+e459162793.492362
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ConnectionManager.o
+x/Users/posco/Desktop/cyou/ConnectionManager.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Compile /Users/posco/Desktop/cyou/ConnectionManager.m24d25aa9445ebb41^38147ea9445ebb41^---0#0#0#-19%DVTDocumentLocation2@61"file://localhost/Users/posco/Desktop/cyou/ConnectionManager.m0000000000000000^3887"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ConnectionManager.o ConnectionManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ConnectionManager.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ConnectionManager.dia -c /Users/posco/Desktop/cyou/ConnectionManager.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ConnectionManager.o36"68771413-BB91-45AC-AA5C-B5D488CB19AD-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataAzukari.o /Users/posco/Desktop/cyou/photo/DataAzukari.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.918681
+e459162793.011794
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataAzukari.o
+x/Users/posco/Desktop/cyou/photo/DataAzukari.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Compile /Users/posco/Desktop/cyou/photo/DataAzukari.mc16feba8445ebb41^570403a9445ebb41^---0#0#0#-19%DVTDocumentLocation2@61"file://localhost/Users/posco/Desktop/cyou/photo/DataAzukari.m0000000000000000^3863"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataAzukari.o photo/DataAzukari.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataAzukari.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataAzukari.dia -c /Users/posco/Desktop/cyou/photo/DataAzukari.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataAzukari.o36"EBF7B5E1-5522-42F3-AFD4-9B7E91EBB5FB-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataMente.o /Users/posco/Desktop/cyou/photo/DataMente.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.984043
+e459162793.084495
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataMente.o
+x/Users/posco/Desktop/cyou/photo/DataMente.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Compile /Users/posco/Desktop/cyou/photo/DataMente.m8523fca8445ebb41^e0a015a9445ebb41^---0#0#0#-19%DVTDocumentLocation2@59"file://localhost/Users/posco/Desktop/cyou/photo/DataMente.m0000000000000000^3851"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataMente.o photo/DataMente.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataMente.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataMente.dia -c /Users/posco/Desktop/cyou/photo/DataMente.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataMente.o36"4771B2E9-C732-4D22-9B04-EC93A1DD6627-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataModels.o /Users/posco/Desktop/cyou/photo/DataModels.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.329990
+e459162792.782475
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataModels.o
+x/Users/posco/Desktop/cyou/photo/DataModels.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Users/posco/Desktop/cyou/photo/DataModels.m91b754a8445ebb41^c24fc8a8445ebb41^---0#0#0#-19%DVTDocumentLocation2@60"file://localhost/Users/posco/Desktop/cyou/photo/DataModels.m0000000000000000^3857"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataModels.o photo/DataModels.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataModels.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataModels.dia -c /Users/posco/Desktop/cyou/photo/DataModels.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataModels.o36"91D9A28B-89BD-4BEF-BB94-1E5BA46D399E-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataUpdate.o /Users/posco/Desktop/cyou/photo/DataUpdate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.858374
+e459162792.982531
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataUpdate.o
+x/Users/posco/Desktop/cyou/photo/DataUpdate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Users/posco/Desktop/cyou/photo/DataUpdate.mb9fcdba8445ebb41^9698fba8445ebb41^---0#0#0#-19%DVTDocumentLocation2@60"file://localhost/Users/posco/Desktop/cyou/photo/DataUpdate.m0000000000000000^3857"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataUpdate.o photo/DataUpdate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataUpdate.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataUpdate.dia -c /Users/posco/Desktop/cyou/photo/DataUpdate.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/DataUpdate.o36"A2AD70D7-3838-4615-828B-4F6DCC1D828F-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Employee.o /Users/posco/Desktop/cyou/Employee.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.370945
+e459162793.435738
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Employee.o
+x/Users/posco/Desktop/cyou/Employee.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Compile /Users/posco/Desktop/cyou/Employee.m412c5fa9445ebb41^ddcd6fa9445ebb41^---0#0#0#-19%DVTDocumentLocation2@52"file://localhost/Users/posco/Desktop/cyou/Employee.m0000000000000000^3833"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Employee.o Employee.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Employee.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Employee.dia -c /Users/posco/Desktop/cyou/Employee.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Employee.o36"D64E5426-C6CF-4D4E-86C9-C5DAF19ED11E-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMDatabase.o /Users/posco/Desktop/cyou/FMDB/FMDatabase.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.282457
+e459162792.759483
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMDatabase.o
+x/Users/posco/Desktop/cyou/FMDB/FMDatabase.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Compile /Users/posco/Desktop/cyou/FMDB/FMDatabase.m107448a8445ebb41^486dc2a8445ebb41^---0#0#0#-19%DVTDocumentLocation2@59"file://localhost/Users/posco/Desktop/cyou/FMDB/FMDatabase.m0000000000000000^3855"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMDatabase.o FMDB/FMDatabase.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMDatabase.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMDatabase.dia -c /Users/posco/Desktop/cyou/FMDB/FMDatabase.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMDatabase.o36"2AAB4B17-AA59-4756-AF6B-96861EDD9E21-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMResultSet.o /Users/posco/Desktop/cyou/FMDB/FMResultSet.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.281929
+e459162792.539083
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMResultSet.o
+x/Users/posco/Desktop/cyou/FMDB/FMResultSet.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Users/posco/Desktop/cyou/FMDB/FMResultSet.mdf5048a8445ebb41^c1008aa8445ebb41^---0#0#0#-19%DVTDocumentLocation2@60"file://localhost/Users/posco/Desktop/cyou/FMDB/FMResultSet.m0000000000000000^3861"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMResultSet.o FMDB/FMResultSet.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMResultSet.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMResultSet.dia -c /Users/posco/Desktop/cyou/FMDB/FMResultSet.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/FMResultSet.o36"A4BC8339-E201-421F-9FB4-26075393E178-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Goods.o /Users/posco/Desktop/cyou/Goods.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.233342
+e459162793.300308
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Goods.o
+x/Users/posco/Desktop/cyou/Goods.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Compile /Users/posco/Desktop/cyou/Goods.m2bf63ba9445ebb41^11e04ca9445ebb41^---0#0#0#-19%DVTDocumentLocation2@49"file://localhost/Users/posco/Desktop/cyou/Goods.m0000000000000000^3815"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Goods.o Goods.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Goods.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Goods.dia -c /Users/posco/Desktop/cyou/Goods.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Goods.o36"7A7B51FF-9193-4866-80BE-70AD8413D03C-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/KosuViewController.o /Users/posco/Desktop/cyou/photo/KosuViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.783921
+e459162792.956179
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/KosuViewController.o
+x/Users/posco/Desktop/cyou/photo/KosuViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Users/posco/Desktop/cyou/photo/KosuViewController.m79ebc8a8445ebb41^8ca3f6a8445ebb41^---0#0#0#-19%DVTDocumentLocation2@68"file://localhost/Users/posco/Desktop/cyou/photo/KosuViewController.m0000000000000000^3905"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/KosuViewController.o photo/KosuViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/KosuViewController.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/KosuViewController.dia -c /Users/posco/Desktop/cyou/photo/KosuViewController.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/KosuViewController.o36"F05C013C-B21E-4B64-880A-F994F096DEAD-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/MainViewController.o /Users/posco/Desktop/cyou/photo/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.686396
+e459162792.857013
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/MainViewController.o
+x/Users/posco/Desktop/cyou/photo/MainViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Users/posco/Desktop/cyou/photo/MainViewController.m19feafa8445ebb41^3a77dba8445ebb41^---0#0#0#-19%DVTDocumentLocation2@68"file://localhost/Users/posco/Desktop/cyou/photo/MainViewController.m0000000000000000^3905"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/MainViewController.o photo/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/MainViewController.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/MainViewController.dia -c /Users/posco/Desktop/cyou/photo/MainViewController.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/MainViewController.o36"D7616DB8-B36F-4910-9AC1-EEA8B39625FB-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ModeSelect.o /Users/posco/Desktop/cyou/photo/ModeSelect.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.972470
+e459162793.185960
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ModeSelect.o
+x/Users/posco/Desktop/cyou/photo/ModeSelect.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Users/posco/Desktop/cyou/photo/ModeSelect.m2fc0faa8445ebb41^9e9a2fa9445ebb41^---0#0#0#-19%DVTDocumentLocation2@60"file://localhost/Users/posco/Desktop/cyou/photo/ModeSelect.m0000000000000000^3857"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ModeSelect.o photo/ModeSelect.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ModeSelect.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ModeSelect.dia -c /Users/posco/Desktop/cyou/photo/ModeSelect.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ModeSelect.o36"9782A8A9-C63D-4330-87A0-937C04F0FFBA-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nebiki.o /Users/posco/Desktop/cyou/Nebiki.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.162065
+e459162793.225840
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nebiki.o
+x/Users/posco/Desktop/cyou/Nebiki.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Compile /Users/posco/Desktop/cyou/Nebiki.m7bbb29a9445ebb41^bccf39a9445ebb41^---0#0#0#-19%DVTDocumentLocation2@50"file://localhost/Users/posco/Desktop/cyou/Nebiki.m0000000000000000^3821"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nebiki.o Nebiki.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nebiki.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nebiki.dia -c /Users/posco/Desktop/cyou/Nebiki.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nebiki.o36"0969B134-87AF-4873-AEC0-A3433AC1A500-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nikkei.o /Users/posco/Desktop/cyou/Nikkei.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.433455
+e459162793.486062
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nikkei.o
+x/Users/posco/Desktop/cyou/Nikkei.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Compile /Users/posco/Desktop/cyou/Nikkei.mad326fa9445ebb41^0c797ca9445ebb41^---0#0#0#-19%DVTDocumentLocation2@50"file://localhost/Users/posco/Desktop/cyou/Nikkei.m0000000000000000^3821"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nikkei.o Nikkei.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nikkei.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nikkei.dia -c /Users/posco/Desktop/cyou/Nikkei.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Nikkei.o36"5A6498BF-B596-4048-B759-EFEEA64B4E2D-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Printer.o /Users/posco/Desktop/cyou/Printer.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.487455
+e459162793.609779
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Printer.o
+x/Users/posco/Desktop/cyou/Printer.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Compile /Users/posco/Desktop/cyou/Printer.m71047da9445ebb41^821c9ca9445ebb41^---0#0#0#-19%DVTDocumentLocation2@51"file://localhost/Users/posco/Desktop/cyou/Printer.m0000000000000000^3827"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Printer.o Printer.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Printer.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Printer.dia -c /Users/posco/Desktop/cyou/Printer.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Printer.o36"DBE017C4-1EE5-49C6-9286-87401F4F23B0-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptConnectionSetup.o /Users/posco/Desktop/cyou/photo/ReceiptConnectionSetup.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.489947
+e459162793.604671
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptConnectionSetup.o
+x/Users/posco/Desktop/cyou/photo/ReceiptConnectionSetup.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/posco/Desktop/cyou/photo/ReceiptConnectionSetup.mc2a37da9445ebb41^91d09aa9445ebb41^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Users/posco/Desktop/cyou/photo/ReceiptConnectionSetup.m0000000000000000^3929"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptConnectionSetup.o photo/ReceiptConnectionSetup.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptConnectionSetup.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptConnectionSetup.dia -c /Users/posco/Desktop/cyou/photo/ReceiptConnectionSetup.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptConnectionSetup.o36"487E6047-9A01-4CCB-BF31-AF788620BCAC-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptSettings.o /Users/posco/Desktop/cyou/ReceiptSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.323084
+e459162793.369565
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptSettings.o
+x/Users/posco/Desktop/cyou/ReceiptSettings.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Compile /Users/posco/Desktop/cyou/ReceiptSettings.m64ea52a9445ebb41^f69a5ea9445ebb41^---0#0#0#-19%DVTDocumentLocation2@59"file://localhost/Users/posco/Desktop/cyou/ReceiptSettings.m0000000000000000^3875"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptSettings.o ReceiptSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptSettings.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptSettings.dia -c /Users/posco/Desktop/cyou/ReceiptSettings.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ReceiptSettings.o36"FD532E0F-C04D-4C06-8C62-5233FFCD4801-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Seisan.o /Users/posco/Desktop/cyou/Seisan.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.106561
+e459162793.160616
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Seisan.o
+x/Users/posco/Desktop/cyou/Seisan.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Compile /Users/posco/Desktop/cyou/Seisan.ma6811ba9445ebb41^581d29a9445ebb41^---0#0#0#-19%DVTDocumentLocation2@50"file://localhost/Users/posco/Desktop/cyou/Seisan.m0000000000000000^3821"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Seisan.o Seisan.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Seisan.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Seisan.dia -c /Users/posco/Desktop/cyou/Seisan.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Seisan.o36"87CA126C-F0E0-4269-91EF-5AE6CC4E7A5C-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SeisanViewController.o /Users/posco/Desktop/cyou/photo/SeisanViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.540611
+e459162792.917051
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SeisanViewController.o
+x/Users/posco/Desktop/cyou/photo/SeisanViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/posco/Desktop/cyou/photo/SeisanViewController.ma8e28aa8445ebb41^9dd5eaa8445ebb41^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/posco/Desktop/cyou/photo/SeisanViewController.m0000000000000000^3917"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SeisanViewController.o photo/SeisanViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SeisanViewController.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SeisanViewController.dia -c /Users/posco/Desktop/cyou/photo/SeisanViewController.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SeisanViewController.o36"EC87D105-5935-4792-87D9-02FD78608624-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Settings.o /Users/posco/Desktop/cyou/Settings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.301699
+e459162793.352521
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Settings.o
+x/Users/posco/Desktop/cyou/Settings.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Compile /Users/posco/Desktop/cyou/Settings.m79764da9445ebb41^594e5aa9445ebb41^---0#0#0#-19%DVTDocumentLocation2@52"file://localhost/Users/posco/Desktop/cyou/Settings.m0000000000000000^3833"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Settings.o Settings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Settings.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Settings.dia -c /Users/posco/Desktop/cyou/Settings.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Settings.o36"CB05FF0D-8757-46E6-A2BA-474425C7C24A-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ShopSettings.o /Users/posco/Desktop/cyou/ShopSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.322774
+e459162793.368591
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ShopSettings.o
+x/Users/posco/Desktop/cyou/ShopSettings.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Compile /Users/posco/Desktop/cyou/ShopSettings.m62d752a9445ebb41^99625ea9445ebb41^---0#0#0#-19%DVTDocumentLocation2@56"file://localhost/Users/posco/Desktop/cyou/ShopSettings.m0000000000000000^3857"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ShopSettings.o ShopSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ShopSettings.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ShopSettings.dia -c /Users/posco/Desktop/cyou/ShopSettings.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ShopSettings.o36"848D9628-7EFC-488F-B2E8-38D1CBEB972E-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Syoukei.o /Users/posco/Desktop/cyou/Syoukei.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.271226
+e459162793.322613
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Syoukei.o
+x/Users/posco/Desktop/cyou/Syoukei.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Compile /Users/posco/Desktop/cyou/Syoukei.m36ac45a9445ebb41^b24853a9445ebb41^---0#0#0#-19%DVTDocumentLocation2@51"file://localhost/Users/posco/Desktop/cyou/Syoukei.m0000000000000000^3827"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Syoukei.o Syoukei.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Syoukei.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Syoukei.dia -c /Users/posco/Desktop/cyou/Syoukei.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Syoukei.o36"657ABFB4-9079-4BD5-B5DA-D93F7FBEE086-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SyoukeiViewController.o /Users/posco/Desktop/cyou/photo/SyoukeiViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.422564
+e459162792.685009
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SyoukeiViewController.o
+x/Users/posco/Desktop/cyou/photo/SyoukeiViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/posco/Desktop/cyou/photo/SyoukeiViewController.ma9686ca8445ebb41^075cafa8445ebb41^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/posco/Desktop/cyou/photo/SyoukeiViewController.m0000000000000000^3923"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SyoukeiViewController.o photo/SyoukeiViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SyoukeiViewController.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SyoukeiViewController.dia -c /Users/posco/Desktop/cyou/photo/SyoukeiViewController.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/SyoukeiViewController.o36"FEF31563-2FDA-4B14-85D4-D40DAEEB2DBA-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tanto.o /Users/posco/Desktop/cyou/Tanto.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.187393
+e459162793.232940
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tanto.o
+x/Users/posco/Desktop/cyou/Tanto.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Compile /Users/posco/Desktop/cyou/Tanto.mff3d30a9445ebb41^06123ca9445ebb41^---0#0#0#-19%DVTDocumentLocation2@49"file://localhost/Users/posco/Desktop/cyou/Tanto.m0000000000000000^3815"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tanto.o Tanto.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tanto.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tanto.dia -c /Users/posco/Desktop/cyou/Tanto.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tanto.o36"4EE29434-B724-4F22-A3B5-9DD86C572B00-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TantouViewController.o /Users/posco/Desktop/cyou/photo/TantouViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.761093
+e459162792.939089
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TantouViewController.o
+x/Users/posco/Desktop/cyou/photo/TantouViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/posco/Desktop/cyou/photo/TantouViewController.m971cc3a8445ebb41^b588f0a8445ebb41^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/posco/Desktop/cyou/photo/TantouViewController.m0000000000000000^3917"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TantouViewController.o photo/TantouViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TantouViewController.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TantouViewController.dia -c /Users/posco/Desktop/cyou/photo/TantouViewController.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TantouViewController.o36"92A014C1-EDBB-4BE5-A0C8-00E94F7C6FCA-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tenpo.o /Users/posco/Desktop/cyou/Tenpo.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.437327
+e459162793.488715
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tenpo.o
+x/Users/posco/Desktop/cyou/Tenpo.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Compile /Users/posco/Desktop/cyou/Tenpo.m6b2d70a9445ebb41^7e1c7da9445ebb41^---0#0#0#-19%DVTDocumentLocation2@49"file://localhost/Users/posco/Desktop/cyou/Tenpo.m0000000000000000^3815"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tenpo.o Tenpo.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tenpo.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tenpo.dia -c /Users/posco/Desktop/cyou/Tenpo.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/Tenpo.o36"115ACC18-9685-4A22-99C5-2013DA5DB5F6-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TenpoSettei.o /Users/posco/Desktop/cyou/photo/TenpoSettei.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.085901
+e459162793.320871
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TenpoSettei.o
+x/Users/posco/Desktop/cyou/photo/TenpoSettei.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Compile /Users/posco/Desktop/cyou/photo/TenpoSettei.m113816a9445ebb41^863c52a9445ebb41^---0#0#0#-19%DVTDocumentLocation2@61"file://localhost/Users/posco/Desktop/cyou/photo/TenpoSettei.m0000000000000000^3863"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TenpoSettei.o photo/TenpoSettei.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TenpoSettei.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TenpoSettei.dia -c /Users/posco/Desktop/cyou/photo/TenpoSettei.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TenpoSettei.o36"BB10AF38-67EA-4269-93E6-C17BF4DBAB1E-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TransferData.o /Users/posco/Desktop/cyou/TransferData.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.369838
+e459162793.432167
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TransferData.o
+x/Users/posco/Desktop/cyou/TransferData.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Compile /Users/posco/Desktop/cyou/TransferData.m15e55ea9445ebb41^59be6ea9445ebb41^---0#0#0#-19%DVTDocumentLocation2@56"file://localhost/Users/posco/Desktop/cyou/TransferData.m0000000000000000^3857"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TransferData.o TransferData.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TransferData.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TransferData.dia -c /Users/posco/Desktop/cyou/TransferData.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/TransferData.o36"A33346A5-BFA3-4703-BB83-4F9B368E14A6-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/UriageSettei.o /Users/posco/Desktop/cyou/photo/UriageSettei.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.013190
+e459162793.231298
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/UriageSettei.o
+x/Users/posco/Desktop/cyou/photo/UriageSettei.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Compile /Users/posco/Desktop/cyou/photo/UriageSettei.mcb9f03a9445ebb41^78463ba9445ebb41^---0#0#0#-19%DVTDocumentLocation2@62"file://localhost/Users/posco/Desktop/cyou/photo/UriageSettei.m0000000000000000^3869"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/UriageSettei.o photo/UriageSettei.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/UriageSettei.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/UriageSettei.dia -c /Users/posco/Desktop/cyou/photo/UriageSettei.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/UriageSettei.o36"87D47359-02DC-459C-AE9C-240E08EE1206-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ViewController.o /Users/posco/Desktop/cyou/photo/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162793.233556
+e459162793.566366
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ViewController.o
+x/Users/posco/Desktop/cyou/photo/ViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Users/posco/Desktop/cyou/photo/ViewController.m11003ca9445ebb41^c6fc90a9445ebb41^---0#0#0#-19%DVTDocumentLocation2@64"file://localhost/Users/posco/Desktop/cyou/photo/ViewController.m0000000000000000^3881"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ViewController.o photo/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ViewController.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ViewController.dia -c /Users/posco/Desktop/cyou/photo/ViewController.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/ViewController.o36"D00EACC1-54B4-4DB2-8567-57EEBCF73EA7-
+
+CCompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/main.o /Users/posco/Desktop/cyou/photo/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162792.282470
+e459162792.328632
+r1
+xCompileC
+xbuild/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/main.o
+x/Users/posco/Desktop/cyou/photo/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Compile /Users/posco/Desktop/cyou/photo/main.m028348a8445ebb41^263554a8445ebb41^---0#0#0#-19%DVTDocumentLocation2@54"file://localhost/Users/posco/Desktop/cyou/photo/main.m0000000000000000^3821"CompileC build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/main.o photo/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -include /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch -MMD -MT dependencies -MF /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/main.d --serialize-diagnostics /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/main.dia -c /Users/posco/Desktop/cyou/photo/main.m -o /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/main.o36"C7C845E8-056D-478C-B479-35CCE583CD8B-
+
+CCompileStoryboard /Users/posco/Desktop/cyou/Base.lproj/MainStoryboard.storyboard
+r0
+
+CCopyPNGFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Default-568h@2x.png Default-568h@2x.png
+r0
+
+CCopyPNGFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Default.png Default.png
+r0
+
+CCopyPNGFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Icon.png picture/Icon.png
+r0
+
+CCopyPNGFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/NoImage.png picture/NoImage.png
+r0
+
+CCopyPNGFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button.png picture/button.png
+r0
+
+CCopyPNGFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button2.png picture/button2.png
+r0
+
+CCopyPNGFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button3.png picture/button3.png
+r0
+
+CCopyPNGFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button4.png picture/button4.png
+r0
+
+CCopyPNGFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button_L.png picture/button_L.png
+r0
+
+CCopyPNGFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/button_R.png picture/button_R.png
+r0
+
+CCopyPNGFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/logo.png picture/logo.png
+r0
+
+CCpResource ReceiptComment.txt build/Release-iphoneos/HandyPOS.app/ReceiptComment.txt
+r0
+
+CCpResource photo/Beep.wav build/Release-iphoneos/HandyPOS.app/Beep.wav
+r0
+
+CCpResource photo/butin.wav build/Release-iphoneos/HandyPOS.app/butin.wav
+r0
+
+CCpResource picture/back.bmp build/Release-iphoneos/HandyPOS.app/back.bmp
+r0
+
+CCpResource picture/button01.gif build/Release-iphoneos/HandyPOS.app/button01.gif
+r0
+
+CCpResource picture/button02.gif build/Release-iphoneos/HandyPOS.app/button02.gif
+r0
+
+CCpResource picture/button1.gif build/Release-iphoneos/HandyPOS.app/button1.gif
+r0
+
+CGenerateDSYMFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app.dSYM /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/HandyPOS
+r0
+
+CLd /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/HandyPOS normal armv7
+s459162793.617581
+e459162793.655356
+r0
+xLd
+x/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/HandyPOS
+xnormal
+xarmv7
+old: library not found for -lPods-AFNetworking
+oclang: error: linker command failed with exit code 1 (use -v to see invocation)
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Link /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/HandyPOS8f559ea9445ebb41^59c1a7a9445ebb41^-126"ld: library not found for -lPods-AFNetworkingclang: error: linker command failed with exit code 1 (use -v to see invocation)2(21%IDEActivityLogMessage2@41"Library not found for -lPods-AFNetworking-459162793#0#46#-0#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-459162793#46#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--0#0#0#--1654"Ld build/Release-iphoneos/HandyPOS.app/HandyPOS normal armv7    cd /Users/posco/Desktop/cyou    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/posco/Desktop/cyou/build/Release-iphoneos -L/Users/posco/Desktop/cyou/Printer -L/Users/posco/Desktop/cyou/PrinterLibrary -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -filelist /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Objects-normal/armv7/HandyPOS.LinkFileList -dead_strip -ObjC -lPods-AFNetworking -lPods-NSString+Ruby -lPods-ObjectiveSugar -framework CoreGraphics -framework MobileCoreServices -framework Security -framework SystemConfiguration -ObjC -lPods-AFNetworking -lPods-NSString+Ruby -lPods-ObjectiveSugar -framework CoreGraphics -framework MobileCoreServices -framework Security -framework SystemConfiguration -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.1 -framework ExternalAccessory -lPrinter_160 -framework CFNetwork -framework AudioToolbox -lsqlite3.0 -framework UIKit -framework Foundation -framework CoreGraphics -lPods -o /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/HandyPOS36"D0A5E188-E5CB-411B-B332-8282CAE46B3C-
+
+CPhaseScriptExecution "Check Pods Manifest.lock" /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Script-257DE3073B5E2C1C966774A1.sh
+s459162791.960893
+e459162791.990517
+r1
+xPhaseScriptExecution
+xCheck Pods Manifest.lock
+x/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Script-257DE3073B5E2C1C966774A1.sh
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Run custom shell script 'Check Pods Manifest.lock'b709f7a7445ebb41^e693fda7445ebb41^---0#0#0#--308"PhaseScriptExecution "Check Pods Manifest.lock" build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Script-257DE3073B5E2C1C966774A1.sh    cd /Users/posco/Desktop/cyou    /bin/sh -c /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Script-257DE3073B5E2C1C966774A1.sh36"867C34F2-843D-4CBF-A32F-DEE13F0D587F-
+
+CPhaseScriptExecution "Copy Pods Resources" /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/Script-425F7D9540C4487EECC713D4.sh
+r0
+
+CProcessInfoPlistFile /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Info.plist photo/HandyPOS-Info.plist
+s459162791.946667
+e459162791.951744
+r1
+xProcessInfoPlistFile
+x/Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Info.plist
+xphoto/HandyPOS-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Process photo/HandyPOS-Info.plistff75f2a7445ebb41^82a8f3a7445ebb41^---0#0#0#-19%DVTDocumentLocation2@67"file://localhost/Users/posco/Desktop/cyou/photo/HandyPOS-Info.plist0000000000000000^684"ProcessInfoPlistFile build/Release-iphoneos/HandyPOS.app/Info.plist photo/HandyPOS-Info.plist    cd /Users/posco/Desktop/cyou    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    builtin-infoPlistUtility photo/HandyPOS-Info.plist -genpkginfo /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -o /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app/Info.plist36"CB1EF8CA-FD2D-47B7-B314-DD93C3023D0E-
+
+CProcessPCH /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch.pth photo/HandyPOS-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s459162791.998648
+e459162792.274824
+r1
+xProcessPCH
+x/var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch.pth
+xphoto/HandyPOS-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Precompile photo/HandyPOS-Prefix.pch0ccbffa7445ebb41^365a46a8445ebb41^---0#0#0#-19%DVTDocumentLocation2@67"file://localhost/Users/posco/Desktop/cyou/photo/HandyPOS-Prefix.pch0000000000000000^3914"ProcessPCH /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch.pth photo/HandyPOS-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/posco/Desktop/cyou    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/Users/posco/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-generated-files.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-own-target-headers.hmap -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-all-target-headers.hmap -iquote /Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/HandyPOS-project-headers.hmap -I/Users/posco/Desktop/cyou/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/posco/Desktop/cyou/Pods/Headers/Public -I/Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -I/Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -I/Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources/armv7 -I/Users/posco/Desktop/cyou/build/TEST_HandyPOS.build/Release-iphoneos/HandyPOS.build/DerivedSources -F/Users/posco/Desktop/cyou/build/Release-iphoneos -F/Users/posco/Desktop/cyou -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/AFNetworking -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/NSString+Ruby -isystem /Users/posco/Desktop/cyou/Pods/Headers/Public/ObjectiveSugar --serialize-diagnostics /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch.dia -c /Users/posco/Desktop/cyou/photo/HandyPOS-Prefix.pch -o /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/s5/_2v20lh14pxbjj_vdkjjl9yh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/HandyPOS-Prefix-acpxfxivvvokzqexrwhqjiphrnhf/HandyPOS-Prefix.pch.d36"F7B3E383-5044-4CE9-8681-C3A45D1D2E88-
+
+CTouch /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app
+r0
+
+CValidate /Users/posco/Desktop/cyou/build/Release-iphoneos/HandyPOS.app
+r0
+

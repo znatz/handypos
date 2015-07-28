@@ -11,10 +11,11 @@
 
 @interface ReceiptConnectionSetup () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *url;
-
 @end
 
+
 @implementation ReceiptConnectionSetup
+@synthesize url;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,18 +29,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     self.url.delegate = self;
-    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)];
+    
+    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget : self
+                                                                                  action : @selector(tapped:)];
     [self.view addGestureRecognizer:tapGesture];
+    
     NSUserDefaults * defaultSettings = [NSUserDefaults standardUserDefaults];
     if ([defaultSettings valueForKey:@"PrinterURL"]) {
         self.url.text = [defaultSettings valueForKey:@"PrinterURL"];
     }
+    
+    //背景用の設定
+    UIImage *imgback=[UIImage imageNamed:@"back.bmp"];
+    self.navigationController.navigationBar.tintColor=[UIColor brownColor];
+    self.view.backgroundColor=[UIColor colorWithPatternImage:imgback];
 }
 
--(IBAction)tapped:(id)sender {
-    [self.url resignFirstResponder];
+-(IBAction)tapped:(id)sender
+{
+    [self.view endEditing:true];
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -70,14 +82,15 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [self.url resignFirstResponder];
+    [textField resignFirstResponder];
     return YES;
 }
 
 // Dismiss Keyboard After Editing
 - (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self.url resignFirstResponder];
+    [textField resignFirstResponder];
 }
+
 - (void)dismissKeyboard {
     [self.url resignFirstResponder];
 }

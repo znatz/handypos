@@ -93,6 +93,7 @@
 		67521E8E16424DE500A60052 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button3.png; path = picture/button3.png; sourceTree = SOURCE_ROOT; };
 		67521E911642553F00A60052 /* button4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button4.png; path = picture/button4.png; sourceTree = SOURCE_ROOT; };
 		675308E5175827A00003CC1C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		67538DC71B65E031006D0AFB /* HandyPOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HandyPOS.entitlements; sourceTree = "<group>"; };
 		67563F311B4B7AD000DEA4A6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		67563F321B4B7AD000DEA4A6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		676F91C81B56570700DA5183 /* Tenpo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tenpo.h; sourceTree = "<group>"; };
@@ -282,7 +283,7 @@
 			name = Print;
 			sourceTree = "<group>";
 		};
-		679F556B168BE35500AD40FF /* モード選択 */ = {
+		679F556B168BE35500AD40FF /* モード選択 */ = {
 			isa = PBXGroup;
 			children = (
 				67B401FC167AB06C00A533AF /* ModeSelect.h */,
@@ -300,7 +301,7 @@
 			name = "売上設定";
 			sourceTree = "<group>";
 		};
-		679F5570168BE42900AD40FF /* 送信データ */ = {
+		679F5570168BE42900AD40FF /* 送信データ */ = {
 			isa = PBXGroup;
 			children = (
 				67C1888C15E219BD00E33452 /* DataUpdate.h */,
@@ -318,7 +319,7 @@
 			name = "預り金";
 			sourceTree = "<group>";
 		};
-		679F5572168BE45900AD40FF /* レジ設定 */ = {
+		679F5572168BE45900AD40FF /* レジ設定 */ = {
 			isa = PBXGroup;
 			children = (
 				679F5567168BD58200AD40FF /* DataMente.h */,
@@ -336,7 +337,7 @@
 			name = "店舗設定";
 			sourceTree = "<group>";
 		};
-		67A4EBF01B5DE18C00B2E0AC /* レジ接続設定 */ = {
+		67A4EBF01B5DE18C00B2E0AC /* レジ接続設定 */ = {
 			isa = PBXGroup;
 			children = (
 				67A4EBF11B5DE1D100B2E0AC /* ReceiptConnectionSetup.h */,
@@ -427,10 +428,10 @@
 		67CBE7F11675E44C00E5D065 /* コントロールメンテ */ = {
 			isa = PBXGroup;
 			children = (
-				67A4EBF01B5DE18C00B2E0AC /* レジ接続設定 */,
+				67A4EBF01B5DE18C00B2E0AC /* レジ接続設定 */,
 				679F5584168C1FDB00AD40FF /* 店舗設定 */,
 				679F556C168BE36100AD40FF /* 売上設定 */,
-				679F556B168BE35500AD40FF /* モード選択 */,
+				679F556B168BE35500AD40FF /* モード選択 */,
 			);
 			name = "コントロールメンテ";
 			sourceTree = "<group>";
@@ -438,6 +439,7 @@
 		67D17B6215AE7522001ED592 = {
 			isa = PBXGroup;
 			children = (
+				67538DC71B65E031006D0AFB /* HandyPOS.entitlements */,
 				674ADC311B5C8C050006A23C /* Print */,
 				674ADC2F1B5C894E0006A23C /* ExternalAccessory.framework */,
 				674ADC261B5C89250006A23C /* usr */,
@@ -537,9 +539,9 @@
 			children = (
 				67D17BAA15AE7637001ED592 /* DataModels.h */,
 				67D17BAB15AE7637001ED592 /* DataModels.m */,
-				679F5570168BE42900AD40FF /* 送信データ */,
+				679F5570168BE42900AD40FF /* 送信データ */,
 				679F5571168BE44100AD40FF /* 預り金 */,
-				679F5572168BE45900AD40FF /* レジ設定 */,
+				679F5572168BE45900AD40FF /* レジ設定 */,
 			);
 			name = SQL;
 			sourceTree = "<group>";
@@ -613,7 +615,7 @@
 		67D17B6415AE7522001ED592 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 67D17B6715AE7522001ED592 /* Build configuration list for PBXProject "TEST_HandyPOS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -764,17 +766,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: POSCO, K.K.";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: POSCO, K.K.";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Noriaki Yanagita (CKYAC8HUGM)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Noriaki Yanagita (CKYAC8HUGM)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -782,15 +789,20 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = HandyPOS;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
@@ -799,27 +811,36 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: POSCO, K.K.";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: POSCO, K.K.";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = HandyPOS;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -828,10 +849,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49491D19AA4DAC191E9223C /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HandyPOS.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Noriaki Yanagita (CKYAC8HUGM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Noriaki Yanagita (CKYAC8HUGM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Noriaki Yanagita (CKYAC8HUGM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -845,10 +868,12 @@
 					"\"$(SRCROOT)/Printer\"",
 					"\"$(SRCROOT)/PrinterLibrary\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "POSCO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = HandyPOS;
-				PROVISIONING_PROFILE = "8F167B9F-3485-4E9C-8A90-F54A15CFC834";
-				"PROVISIONING_PROFILE[sdk=*]" = "8F167B9F-3485-4E9C-8A90-F54A15CFC834";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8F167B9F-3485-4E9C-8A90-F54A15CFC834";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -858,8 +883,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC391235FED771959306B3BB /* Pods.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HandyPOS.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Noriaki Yanagita (CKYAC8HUGM)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: POSCO, K.K.";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: POSCO, K.K.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: POSCO, K.K.";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -875,10 +901,12 @@
 					"\"$(SRCROOT)/Printer\"",
 					"\"$(SRCROOT)/PrinterLibrary\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "POSCO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = HandyPOS;
-				PROVISIONING_PROFILE = "8F167B9F-3485-4E9C-8A90-F54A15CFC834";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};

@@ -18,11 +18,4 @@
 +(Settings *) getSettings ;
 +(ReceiptSettings *) getReceiptSettings ;
 
-
-+(void)drop_table;
-+(void)update_Tantou:(NSString *)Code;
-
-+(NSMutableArray *)selectNo:(NSMutableArray *)array;
-+(NSMutableArray *)selectTantou:(NSMutableArray *)array;
-
 @end

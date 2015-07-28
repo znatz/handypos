@@ -4,17 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-NSString+Ruby.xcscheme</key>
+		<key>NSString+Ruby.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ObjectiveSugar.xcscheme</key>
+		<key>ObjectiveSugar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2E3165AE90C56BA67A3832CF</key>
+		<key>00230A740F9614984D635DB4FD1BD973</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A017E4AF7D58D73B52D3AEB8</key>
+		<key>638CA2E3229FE8C8648AD8199B2F87D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9C5CFF86718091A29348E9A</key>
+		<key>C67F4469F103A6F2AA39592223797996</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E6D3EE01160667974A22C9C5</key>
+		<key>F097D802682609A87BD4669F5AB0D953</key>
 		<dict>
 			<key>primary</key>
 			<true/>

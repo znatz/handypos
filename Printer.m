@@ -61,9 +61,10 @@
     [self normal_center:list_header];
      
     int i;
+    NSString * line = [[NSString alloc] init];
+
     for (i = 0; i<ss.count; i++ ) {
         Syoukei * s = ss[i];
-        NSString * line ;
         
         line     = [NSString stringWithFormat:@"%@\r\n", s.title];
         [self normal_left:line];
@@ -72,14 +73,20 @@
         price_count = [price_count rightJustify:20 with:@" "];
         NSString * priceXcount = [self setStringAsCurrency: [NSString stringWithFormat:@"%d",s.price*s.kosu]];
         priceXcount = [priceXcount rightJustify:11 with:@" "];
+
         line     = [NSString stringWithFormat:@"%@%@\r\n", price_count,priceXcount];
+        
         [self normal_left:line];
+        
+        
+//        [self normal_left:line];
     }
     
     [self double_width_left:@"\r\n"];
     
     NSString * total_price_line = [[self setStringAsCurrency:n._goukei] rightJustify:11 with:@" "];
     total_price_line = [NSString stringWithFormat:@"%@%@\r\n", @"合計",total_price_line];
+
     [self double_width_left:total_price_line];
     
     NSString * tax_amount = [NSString stringWithFormat:@"%d",r.tax * [n._goukei intValue]/100];
@@ -112,6 +119,7 @@
     NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
     [f setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
     [f setNumberStyle:NSNumberFormatterCurrencyStyle];
+    [f setCurrencySymbol:@"￥"];
     NSString * formatted = [f stringFromNumber:[[NSNumber alloc] initWithInt:[input intValue]]];
     return formatted;
 }
@@ -119,8 +127,8 @@
 -(void) normal_left : (NSString *) line {
 	unsigned char leftAlign[3] = {0x1B,0x61,0x00};
 	unsigned char normalSize[3] = {0x1D,0x21,0x00};
-    [self.printer printData:leftAlign withLength:sizeof(leftAlign)];
-	[self.printer printData:normalSize withLength:sizeof(normalSize)];
+    [self.printer printData:leftAlign withLength:3];
+	[self.printer printData:normalSize withLength:3];
     [self.printer printString:line];
 }
 

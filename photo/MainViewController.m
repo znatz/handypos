@@ -70,10 +70,6 @@
     url=[NSURL fileURLWithPath:path];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)url,&soundID);
     
-    NSString * test = [NSString stringWithFormat:@"%@ X %@", @"1260", @"2" ];
-    test = [test rightJustify:10 with:@" "];
-    NSLog(@"%@", test);
-    
 }
 
 - (void)viewDidUnload

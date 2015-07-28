@@ -14,6 +14,7 @@
 #import "Syoukei.h"
 #import "Goods.h"
 #import "Settings.h"
+#import "ConnectionManager.h"
 
 
 @interface SyoukeiViewController ()
@@ -234,6 +235,7 @@
 // Finish Editing, Call SeisanViewController 1 or 2
 -(void)seisan_controller{
     self.title=@"小計";
+//    [ConnectionManager uploadFile:@"BurData.sqlite"];
     SeisanViewController *svc=[self.storyboard instantiateViewControllerWithIdentifier:@"Seisan"];
     svc.totalPrice = [self getTotalPrice:allSyoukei];
     [self.navigationController pushViewController:svc animated:YES];
@@ -243,6 +245,7 @@
 /* Auto amount in button of Seisan View */
 -(void)seisan_controller2{
     self.title=@"小計";
+//    [ConnectionManager uploadFile:@"BurData.sqlite"];
     SeisanViewController *svc=[self.storyboard instantiateViewControllerWithIdentifier:@"Seisan"];
     svc.totalPrice = [self getTotalPrice:allSyoukei];
     [self.navigationController pushViewController:svc animated:YES];
