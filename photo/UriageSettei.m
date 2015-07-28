@@ -38,6 +38,10 @@
 }
 
 - (void)viewDidLoad{
+    /* Solve overlapping navigation bar in iOS 7 */
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     [super viewDidLoad];
     self.title=@"売上設定";
     

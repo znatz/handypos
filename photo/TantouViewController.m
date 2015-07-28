@@ -49,6 +49,10 @@
 
 - (void)viewDidLoad
 {
+    /* Solve overlapping navigation bar in iOS 7 */
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     [super viewDidLoad];
 
     self.title=@"担当登録";
@@ -91,7 +95,7 @@
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     Tanto * t = tantos[row];
-    return [NSString stringWithFormat:@"              %@  :  %@",t._ID,t._name];
+    return [NSString stringWithFormat:@"%@  :  %@",t._ID,t._name];
     
 }
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)componen{
@@ -130,29 +134,7 @@
 
 }
 
-//日計表表示
-/*
--(IBAction)nikkei:(id)sender{
-    AudioServicesPlaySystemSound(soundID);
-    
-    NSMutableArray * allSeisan = [DataUpdate getAllSeisan];
-    if(allSeisan.count>0){
-//        NikkeiViewController *nvc=[self.storyboard
-//                                   instantiateViewControllerWithIdentifier:@"Nikkei"];
-//        [self.navigationController pushViewController:nvc animated:YES];
-    }
-    else{
-        UIAlertView *av =[[UIAlertView alloc]
-                          initWithTitle:@"日計表"
-                          message:@"売上げデータが一件もありません。"
-                          delegate:self
-                          cancelButtonTitle:nil
-                          otherButtonTitles:@"OK", nil];
-        [av show];
-    }
 
-}
- */
 
 - (void)viewDidUnload
 {

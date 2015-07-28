@@ -62,6 +62,10 @@
 
 - (void)viewDidLoad
 {
+    /* Solve overlapping navigation bar in iOS 7 */
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     [super viewDidLoad];
     Flag=@"0";
     self.title=@"売上登録";//title名
@@ -74,10 +78,12 @@
     self.view.backgroundColor=[UIColor colorWithPatternImage:imgback];
     
     _tableview=[[UITableView alloc]init];
-    _tableview.frame = CGRectMake(0, 0, 320, 460-44);//tableviewの大きさ
+    // minus 40 for rebouning UI;
+    _tableview.frame = CGRectMake(0, 0, [self.view frame].size.width, [self.view frame].size.height-60);
     _tableview.dataSource=self;
     _tableview.delegate=self;
     [self.view addSubview:_tableview];
+
     
     //音用の設定
     path=[[NSBundle mainBundle]pathForResource:@"butin" ofType:@"wav"];

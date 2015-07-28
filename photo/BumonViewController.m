@@ -33,7 +33,11 @@
 }
 
 - (void)viewDidLoad
-{   
+{
+    /* Solve overlapping navigation bar in iOS 7 */
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     [super viewDidLoad];
     
 	self.title=@"部門一覧";
@@ -45,7 +49,7 @@
     
     // Setup Table View
     _tableview=[[UITableView alloc]init];
-    _tableview.frame = CGRectMake(0, 0, 320, 460-44);
+    _tableview.frame = CGRectMake(0, 0, [self.view frame].size.width, [self.view frame].size.height-40);
     _tableview.dataSource=self;
     _tableview.delegate=self;
     _tableview.rowHeight=45.0;
