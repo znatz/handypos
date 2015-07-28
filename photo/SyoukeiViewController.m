@@ -31,13 +31,12 @@
     NSMutableArray *idArry2;
     NSMutableArray *kosuArry;
     NSMutableArray *PicModeArry;
-    NSString *Flag;
-    NSString *Flag2;
     NSString *seisanFlg;
 
     NSString *price;
     NSString *kosu;
     
+    BOOL picMode;
 }
 
 
@@ -62,8 +61,8 @@
     allSyoukei = [DataModels getAllSyoukei];
     self.settings = [DataAzukari getSettings];
     
-    Flag= @"1";
-    Flag2=@"1";
+    // Use photo or not
+    picMode = [self.settings.picmode isEqual:@"1"] ? YES : NO;
     
     self.title = [self setupTitle:allSyoukei];
     
@@ -110,15 +109,14 @@
     PicModeArry=[[NSMutableArray alloc]init];
     
    
-    /* Flag 1 */
     
     [DataModels selectID:idArry2 selectFlag:@"0"];
     
-    if([self.settings.picmode intValue]==0){
-        _tableview.rowHeight=70.0;//セルの高さ
+    if(picMode){
+        _tableview.rowHeight=100.0;
     }
     else{
-        _tableview.rowHeight=100.0;//セルの高さ
+        _tableview.rowHeight=70.0;
     }
 
     [_tableview reloadData];//テーブルリロードで更新
@@ -155,15 +153,7 @@
     if(cell==nil){
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    if([self.settings.picmode intValue]==0){
-        [cell.textLabel setFont:[UIFont boldSystemFontOfSize: 22]];
-        [cell.detailTextLabel setFont:[UIFont boldSystemFontOfSize: 25]];
-    }
-    else{
-        [cell.textLabel setFont:[UIFont boldSystemFontOfSize: 24]];
-        [cell.detailTextLabel setFont:[UIFont boldSystemFontOfSize: 25]];
-    }
-    
+  
     /* Cell Text Setup -----------------------------------------------------*/
     //cell.detailTextLabel.textAlignment=UITextAlignmentLeft;
     cell.detailTextLabel.textAlignment= NSTextAlignmentLeft; //ios6
@@ -186,12 +176,12 @@
     }
 
     /* Picture Setup --------------------------------------------------------*/
-    if([self.settings.picmode intValue]==0){
-        cell.detailTextLabel.text=[NSString stringWithFormat:@"        %@円 ×%@",price,kosu];
+    if(picMode){
+        cell.detailTextLabel.text=[NSString stringWithFormat:@"%@円 ×%@",price,kosu];
+        cell.imageView.image=[[UIImage alloc]initWithData:[DataModels getGoodsByID:eachSyoukei.ID].contents];
     }
     else{
-        cell.detailTextLabel.text=[NSString stringWithFormat:@"%@円 ×%@",price,kosu];       
-        cell.imageView.image=[[UIImage alloc]initWithData:[DataModels getGoodsByID:eachSyoukei.ID].contents];
+        cell.detailTextLabel.text=[NSString stringWithFormat:@"        %@円 ×%@",price,kosu];
     }
     return cell;
 }
