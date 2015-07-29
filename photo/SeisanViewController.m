@@ -323,7 +323,7 @@
     
 }
 
-//精算が押されたら処理
+//精算が押されたら処理 Print Button
 -(void)seisan_syori{
     AudioServicesPlaySystemSound(soundID);
     //ベスト表用の格納

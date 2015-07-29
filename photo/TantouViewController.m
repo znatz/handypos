@@ -15,6 +15,7 @@
 #import "Seisan.h"
 #import "DataUpdate.h"
 #import "Settings.h"
+#import "DataMente.h"
 
 @interface TantouViewController (){
     
@@ -117,8 +118,8 @@
     NSUserDefaults * globalVar = [NSUserDefaults standardUserDefaults];
     [globalVar setObject:defaultTanto._ID forKey:@"tantoID"];
     [globalVar synchronize];
-    
-   
+    self.settings.tantou = defaultTanto._ID;
+    [DataAzukari updateSettings:self.settings];
     
     
     if([self.settings.bumode intValue]==0){

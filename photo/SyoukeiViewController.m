@@ -16,11 +16,18 @@
 #import "Settings.h"
 #import "ConnectionManager.h"
 #import "NSString+Ruby.h"
+#import "Bumon.h"
+#import "ShopSettings.h"
+#import "DataMente.h"
+#import "TransferData.h"
+#import "Printer.h"
 
 
 @interface SyoukeiViewController ()
 @property(retain,nonatomic)UITableView *tableview;
 @property Settings * settings;
+@property ShopSettings * shopSettings;
+@property Printer * printer;
 - (NSString *) setupTitle : (NSMutableArray *) s ;
 - (int) getTotalPrice : (NSMutableArray *) s ;
 @end
@@ -38,6 +45,7 @@
     NSString *kosu;
     
     BOOL picMode;
+    
 }
 
 
@@ -61,11 +69,18 @@
     
     allSyoukei = [DataModels getAllSyoukei];
     self.settings = [DataAzukari getSettings];
+    self.shopSettings = [DataMente getShopSettings];
     
     // Use photo or not
     picMode = [self.settings.picmode isEqual:@"1"] ? YES : NO;
     
     self.title = [self setupTitle:allSyoukei];
+    
+    /* Printer Setup */
+    NSUserDefaults * defaulSettings = [NSUserDefaults standardUserDefaults];
+    NSString * printerURL = [defaulSettings valueForKey:@"PrinterURL"];
+    printerURL = printerURL ? printerURL : @"192.168.1.231";
+    self.printer = [[Printer alloc] initWithURL:printerURL];
     
     //背景用の設定
     self.navigationController.navigationBar.tintColor=[UIColor brownColor];
@@ -78,12 +93,7 @@
     //NSLog(@"%@",seisanFlg);
     
     // AZMode
-    if([self.settings.azmode intValue]==0){
-        seisan = [[UIBarButtonItem alloc]initWithTitle:@"決定" style:UIBarButtonItemStyleBordered target:self action:@selector(seisan_controller)];
-    }
-    else{
-        seisan = [[UIBarButtonItem alloc]initWithTitle:@"決定" style:UIBarButtonItemStyleBordered target:self action:@selector(seisan_controller2)];
-    }
+    seisan = [[UIBarButtonItem alloc]initWithTitle:@"決定" style:UIBarButtonItemStyleBordered target:self action:@selector(seisan_controller)];
     self.navigationItem.rightBarButtonItem=seisan;//右側にボタン設置
     self.navigationItem.leftBarButtonItem.title=@"戻る";//左側のボタンタイトル
     
@@ -219,28 +229,88 @@
 }
 
 
-// Finish Editing, Call SeisanViewController 1 or 2
+/* This will called the old Seisan page which is disable now 
+ 
+    -(void)seisan_controller{
+        self.title=@"小計";
+        SeisanViewController *svc=[self.storyboard instantiateViewControllerWithIdentifier:@"Seisan"];
+        svc.totalPrice = [self getTotalPrice:allSyoukei];
+        [self.navigationController pushViewController:svc animated:YES];
+    }
+*/
+
+
+//精算が押されたら処理
 -(void)seisan_controller{
-    self.title=@"小計";
-//    [ConnectionManager uploadFile:@"BurData.sqlite"];
-    SeisanViewController *svc=[self.storyboard instantiateViewControllerWithIdentifier:@"Seisan"];
-    svc.totalPrice = [self getTotalPrice:allSyoukei];
-    [self.navigationController pushViewController:svc animated:YES];
+    
+    //日付の取得
+    NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
+    [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
+    NSDate *now=[NSDate date];
+    [formatter setDateFormat:@"yyyy年MM月dd日(E) HH:mm"];
+    NSString *time=[formatter stringFromDate:now];
+    
+    allSyoukei = [DataModels getAllSyoukei];
+    NSString * Re_no= self.shopSettings.receipt;
+
+    //各要素の保存
+    for(int i=0;i<allSyoukei.count;i++){
+
+        Syoukei * s = allSyoukei[i];
+        
+        
+        Goods * g = [DataModels getGoodsByID:s.ID];
+        Bumon * b = (Bumon *) [DataModels getBumonByID:g.bumon];
+        
+        [DataModels saveToSeisan:s withTime:time withReceiptNo:Re_no withBumon:b.bumon];
+
+        /* Prepare data for sending !!!   --------------------------- */
+        [DataModels createTransferData];
+        TransferData * transfer = [[TransferData alloc] initWithTantoID : self.settings.tantou
+                                                             goodsTitle : s.title
+                                                                   kosu : [NSString stringWithFormat:@"%d", s.kosu]
+                                                                   time : time
+                                                              receiptNo : Re_no];
+        [DataModels saveToTransfer:transfer];
+        
+        /* Update Stock
+            for(int j=0;j<idArry2.count;j++){
+                // TODO Unknown
+                if([s.ID intValue]==[[idArry2 objectAtIndex:j] intValue]){
+                    [DataModels selectID:[idArry2 objectAtIndex:j] updateKosu:[NSString stringWithFormat:@"%d",[[kosuArry2 objectAtIndex:j] intValue]+s.kosu] selectFlag:@"4"];
+                }
+            }
+         */
+    }
+    
+    
+    //レシートNoの増加
+    Re_no=[NSString stringWithFormat:@"%d",[Re_no intValue]+1];
+
+    self.shopSettings.receipt = Re_no;
+    [DataMente updateShopSettings:self.shopSettings];
+    
+    
+    
+    /* Print -------------------------------------------- */
+    /*
+    [self.printer printHeader];
+    [self.printer printContentsWith:[DataModels getAllTransfer] syoukei:allSyoukei];
+    [self.printer printFooter];
+    [self.printer close];
+     */
+    
+    // TODO Cleanup before return to home!
+    [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:0]animated:YES];//保存後ホームに戻る
+   
+    /* Send To Kichen ----------------------------------- */
+    [ConnectionManager uploadFile:@"BurData.sqlite"];
+    [DataModels dropTransferData];
 }
 
 
-/* Auto amount in button of Seisan View */
--(void)seisan_controller2{
-    self.title=@"小計";
-//    [ConnectionManager uploadFile:@"BurData.sqlite"];
-    SeisanViewController *svc=[self.storyboard instantiateViewControllerWithIdentifier:@"Seisan"];
-    svc.totalPrice = [self getTotalPrice:allSyoukei];
-    [self.navigationController pushViewController:svc animated:YES];
-}
 
-
-
-
+/* WasteLand */
 - (void)viewDidUnload
 {
     [super viewDidUnload];
