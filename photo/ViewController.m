@@ -322,7 +322,6 @@
 -(void)syoukei_controller{
     AudioServicesPlaySystemSound(soundID);
  
-    allSyoukei = [DataModels getAllSyoukei];
     if(allSyoukei.count==0) {
 
         UIAlertView *av =[[UIAlertView alloc]
