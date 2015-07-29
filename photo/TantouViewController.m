@@ -22,6 +22,7 @@
 
     NSMutableArray * tantos;
     Tanto * defaultTanto;
+    NSString * selectedTable;
     
     
     //音用の設定
@@ -58,6 +59,7 @@
 
     self.title=@"担当登録";
     self.settings = [DataAzukari getSettings];
+    selectedTable = @"0";
     
     //背景用の設定
     self.navigationController.navigationBar.tintColor=[UIColor brownColor];
@@ -65,7 +67,7 @@
     self.view.backgroundColor=[UIColor colorWithPatternImage:imgback];
     
     UIPickerView *pic=[[UIPickerView alloc]init];
-    pic.center=self.view.center;
+    pic.frame = CGRectMake(10.0, [self.view frame].size.height/4, [self.view frame].size.width-20.0, [self.view frame].size.height/2);
     pic.delegate=self;
     pic.dataSource=self;
     pic.showsSelectionIndicator=YES;
@@ -76,7 +78,7 @@
     tantos = [DataModels getAllTantos];
     defaultTanto = tantos[0];
     name.text = defaultTanto._name;
-    idno.text = defaultTanto._ID;
+    idno.text = @"担当者";
     
     
     
@@ -87,36 +89,46 @@
 }
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
-    return 1;
+    return 2;
 }
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return tantos.count;
+    if(component == 0) return tantos.count;
+    // Maximum count of table in the restaurant
+    else return 50;
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    Tanto * t = tantos[row];
-    return [NSString stringWithFormat:@"%@",t._name];
+    if (component == 0) {
+        Tanto * t = tantos[row];
+        return [NSString stringWithFormat:@"%@",t._name];
+    } else {
+        return [NSString stringWithFormat:@"%d", row];
+    }
     
 }
--(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)componen{
-    defaultTanto = tantos[row];
-    name.text = defaultTanto._name;
-    idno.text = defaultTanto._ID;
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    
+    if (component == 0) {
+        defaultTanto = tantos[row];
+        name.text = defaultTanto._name;
+    } else {
+        self.tableNO.text = [NSString stringWithFormat:@"%d", row];
+        selectedTable = self.tableNO.text;
+        
+    }
 }
-//担当決定
+// Submit selection of Tanto and Table
 -(IBAction)kettei:(id)sender{
     AudioServicesPlaySystemSound(soundID);
     
     /* Syoukei をクリア */
     [DataModels drop_table:@"Syoukei"];
     
-    /* Azukari の Tanto をクリア後挿入 */
-//    [DataAzukari update_Tantou:defaultTanto._ID];
-    
     
     NSUserDefaults * globalVar = [NSUserDefaults standardUserDefaults];
     [globalVar setObject:defaultTanto._ID forKey:@"tantoID"];
+    [globalVar setObject:selectedTable forKey:@"tableNO"];
     [globalVar synchronize];
     self.settings.tantou = defaultTanto._ID;
     [DataAzukari updateSettings:self.settings];

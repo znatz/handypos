@@ -351,6 +351,8 @@
         Goods * g = [DataModels getGoodsByID:s.ID];
         Bumon * b = (Bumon *)[DataModels getBumonByID:g.bumon];
         
+        NSUserDefaults * defaultSettings = [NSUserDefaults standardUserDefaults];
+        NSString * tableNO = [defaultSettings objectForKey:@"tableNO"];
         
         if(henpin_flag==0){
             
@@ -362,7 +364,8 @@
                                                                  goodsTitle : s.title
                                                                        kosu : [NSString stringWithFormat:@"%d", s.kosu]
                                                                        time : time
-                                                                  receiptNo : Re_no];
+                                                                  receiptNo : Re_no
+                                                                    tableNO : tableNO];
             [DataModels saveToTransfer:transfer];
             
             for(int j=0;j<idArry2.count;j++){

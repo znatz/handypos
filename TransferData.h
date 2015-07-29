@@ -14,9 +14,11 @@
 @property NSString * kosu;
 @property NSString * time;
 @property NSString * receiptNo;
+@property NSString * tableNO;
 -(TransferData *) initWithTantoID : (NSString *) i
                        goodsTitle : (NSString *) t
                              kosu : (NSString *) k
                              time : (NSString *) time
-                        receiptNo : (NSString *) r ;
+                        receiptNo : (NSString *) r
+                          tableNO : (NSString *) tb;
 @end

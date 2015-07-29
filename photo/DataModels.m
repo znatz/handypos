@@ -722,7 +722,7 @@
 + (void) createTransferData {
     FMDatabase * db = [DataModels getBurDataDB];
     [db open];
-    [db executeUpdate:@"CREATE TABLE IF NOT EXISTS transfer ( tantoID TEXT, goodsTitle TEXT, kosu TEXT, time TEXT, receiptNo TEXT);"];
+    [db executeUpdate:@"CREATE TABLE IF NOT EXISTS transfer ( tantoID TEXT, goodsTitle TEXT, kosu TEXT, time TEXT, receiptNo TEXT, tableNO TEXT);"];
     [db close];
 }
 
@@ -737,7 +737,7 @@
 {
     FMDatabase * db = [DataModels getBurDataDB];
     [db open];
-    [db executeUpdate:@"INSERT INTO transfer VALUES (?, ?, ?, ?, ?)", t.tantoID, t.goodsTitle, t.kosu, t.time, t.receiptNo];
+    [db executeUpdate:@"INSERT INTO transfer VALUES (?, ?, ?, ?, ?, ?)", t.tantoID, t.goodsTitle, t.kosu, t.time, t.receiptNo, t.tableNO];
     [db close];
 }
 
@@ -809,7 +809,13 @@
     [db open];
     FMResultSet *results=[db executeQuery:@"SELECT * FROM transfer"];
     while ([results next]) {
-        TransferData * t = [[TransferData alloc] initWithTantoID:[results stringForColumn:@"tantoID"] goodsTitle:[results stringForColumn:@"goodsTitle"] kosu:[results stringForColumn:@"kosu"] time:[results stringForColumn:@"time"] receiptNo:[results stringForColumn:@"receiptNo"]];
+        TransferData * t = [[TransferData alloc]
+                            initWithTantoID : [results stringForColumn:@"tantoID"]
+                            goodsTitle : [results stringForColumn:@"goodsTitle"]
+                            kosu : [results stringForColumn:@"kosu"]
+                            time : [results stringForColumn:@"time"]
+                            receiptNo : [results stringForColumn:@"receiptNo"]
+                            tableNO:[results stringForColumn:@"tableNO"]];
         [allTransfer addObject:t];
     }
     [db close];

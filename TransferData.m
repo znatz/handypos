@@ -15,6 +15,7 @@
                              kosu : (NSString *) k
                              time : (NSString *) time
                         receiptNo : (NSString *) r
+                          tableNO : (NSString *)tb
 {
     self = [super init];
     self.tantoID = i;
@@ -22,6 +23,7 @@
     self.kosu = k;
     self.time = time;
     self.receiptNo = r;
+    self.tableNO = tb;
     return self;
 }
 @end

@@ -77,10 +77,12 @@
     self.title = [self setupTitle:allSyoukei];
     
     /* Printer Setup */
+    /*
     NSUserDefaults * defaulSettings = [NSUserDefaults standardUserDefaults];
     NSString * printerURL = [defaulSettings valueForKey:@"PrinterURL"];
     printerURL = printerURL ? printerURL : @"192.168.1.231";
     self.printer = [[Printer alloc] initWithURL:printerURL];
+     */
     
     //背景用の設定
     self.navigationController.navigationBar.tintColor=[UIColor brownColor];
@@ -88,11 +90,8 @@
     self.view.backgroundColor=[UIColor colorWithPatternImage:imgback];
     
     
+    // Navigate to the SENDING page
     UIBarButtonItem *seisan;
-
-    //NSLog(@"%@",seisanFlg);
-    
-    // AZMode
     seisan = [[UIBarButtonItem alloc]initWithTitle:@"決定" style:UIBarButtonItemStyleBordered target:self action:@selector(seisan_controller)];
     self.navigationItem.rightBarButtonItem=seisan;//右側にボタン設置
     self.navigationItem.leftBarButtonItem.title=@"戻る";//左側のボタンタイトル
@@ -240,7 +239,7 @@
 */
 
 
-//精算が押されたら処理
+/* Submit and Send to server */
 -(void)seisan_controller{
     
     //日付の取得
@@ -253,6 +252,9 @@
     allSyoukei = [DataModels getAllSyoukei];
     NSString * Re_no= self.shopSettings.receipt;
 
+    NSUserDefaults * defaultSettings = [NSUserDefaults standardUserDefaults];
+    NSString * tableNO = [defaultSettings objectForKey:@"tableNO"];
+    
     //各要素の保存
     for(int i=0;i<allSyoukei.count;i++){
 
@@ -270,7 +272,8 @@
                                                              goodsTitle : s.title
                                                                    kosu : [NSString stringWithFormat:@"%d", s.kosu]
                                                                    time : time
-                                                              receiptNo : Re_no];
+                                                              receiptNo : Re_no
+                                                                tableNO : tableNO];
         [DataModels saveToTransfer:transfer];
         
         /* Update Stock
