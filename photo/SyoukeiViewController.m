@@ -21,6 +21,7 @@
 #import "DataMente.h"
 #import "TransferData.h"
 #import "Printer.h"
+#import <AudioToolbox/AudioServices.h>
 
 
 @interface SyoukeiViewController ()
@@ -45,6 +46,11 @@
     NSString *kosu;
     
     BOOL picMode;
+    
+    // Sound Resource
+    NSString *path;
+    NSURL *url;
+    SystemSoundID soundID;
     
 }
 
@@ -89,6 +95,10 @@
     UIImage *imgback=[UIImage imageNamed:@"back.bmp"];
     self.view.backgroundColor=[UIColor colorWithPatternImage:imgback];
     
+    //音用の設定
+    path=[[NSBundle mainBundle]pathForResource:@"butin" ofType:@"wav"];
+    url=[NSURL fileURLWithPath:path];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)url,&soundID);
     
     // Navigate to the SENDING page
     UIBarButtonItem *seisan;
@@ -309,6 +319,8 @@
     /* Send To Kichen ----------------------------------- */
     [ConnectionManager uploadFile:@"BurData.sqlite"];
     [DataModels dropTransferData];
+    
+    AudioServicesPlaySystemSound(soundID);
 }
 
 

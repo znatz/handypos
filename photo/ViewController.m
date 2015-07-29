@@ -58,6 +58,9 @@
     // "PLUS"  Button Image
     UIImage *imgbutton;
     
+    // Cache goods image
+    NSMutableArray * all_goods_images;
+    
     BOOL picMode ;
     
 }
@@ -128,12 +131,20 @@
     
     /* Bumon Mode Check */
     if([strBumon intValue]>0) {
-        // Select goods under the Bumon
         allGoods = [DataModels getAllGoodsByBumon:strBumon];
     }
     else{
         allGoods = [DataModels getAllGoods];
     }
+    
+    // Fetch goods images
+    all_goods_images = [[NSMutableArray alloc] init];
+    for (Goods * g in allGoods) {
+        UIImage * image =[[UIImage alloc]initWithData:g.contents];
+        [all_goods_images addObject:image];
+    }
+    
+    all_goods_images = [self arrayOfThumbnailsOfSize:CGSizeMake(80.0, 80.0) fromArray:all_goods_images];
     
     [_tableview reloadData];
 
@@ -173,7 +184,7 @@
     //＋ボタンの表示
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setBackgroundImage:imgbutton forState:UIControlStateNormal];
-    button.frame=CGRectMake(0, 0,30,30);
+    button.frame=CGRectMake(0, 0,40,40);
     [button addTarget:self
                action:@selector(control:event:)forControlEvents:UIControlEventTouchUpInside];
     button.tag = indexPath.row;
@@ -220,8 +231,8 @@
     
     
     /* Use photo or not */
+    if(picMode) cell.imageView.image= (UIImage *) [all_goods_images objectAtIndex:indexPath.row];
     cell.imageView.frame = CGRectMake(0,0,10,10);
-    if(picMode) cell.imageView.image=[[UIImage alloc]initWithData:eachGood.contents];
     
     cell.detailTextLabel.text = kosu > 0 ? [NSString stringWithFormat:@"%@ x%d", pricetag, kosu] : pricetag;
     
@@ -373,6 +384,17 @@
     
 }
 
+- (NSMutableArray *)arrayOfThumbnailsOfSize:(CGSize)size fromArray:(NSMutableArray*)original {
+    NSMutableArray *temp = [NSMutableArray arrayWithCapacity:[original count]];
+    for(UIImage *image in original){
+        UIGraphicsBeginImageContext(size);
+        [image drawInRect:CGRectMake(0,0,size.width,size.height)];
+        UIImage *thumb = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        [temp addObject:thumb];
+    }
+    return [NSMutableArray arrayWithArray:temp];
+}
  
 
 - (void)viewDidUnload
