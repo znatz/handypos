@@ -161,6 +161,8 @@
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
+    [cell setOpaque:YES];
+    
     
    [cell.textLabel setFont:[UIFont boldSystemFontOfSize: 18]];
    [cell.detailTextLabel setFont:[UIFont boldSystemFontOfSize: 16]];
@@ -218,6 +220,7 @@
     
     
     /* Use photo or not */
+    cell.imageView.frame = CGRectMake(0,0,10,10);
     if(picMode) cell.imageView.image=[[UIImage alloc]initWithData:eachGood.contents];
     
     cell.detailTextLabel.text = kosu > 0 ? [NSString stringWithFormat:@"%@ x%d", pricetag, kosu] : pricetag;
@@ -225,7 +228,7 @@
     return cell;
 }
 
-//+ボタンがタップされたときの処理
+//+ボタンがタップされたときの処理 "PLUS" button handler
 -(void)control:(id)sender event:(id)event{
     
     AudioServicesPlaySystemSound(soundID);
