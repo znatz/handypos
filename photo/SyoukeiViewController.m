@@ -15,6 +15,7 @@
 #import "Goods.h"
 #import "Settings.h"
 #import "ConnectionManager.h"
+#import "NSString+Ruby.h"
 
 
 @interface SyoukeiViewController ()
@@ -87,10 +88,10 @@
     self.navigationItem.leftBarButtonItem.title=@"戻る";//左側のボタンタイトル
     
     _tableview=[[UITableView alloc]init];
-    _tableview.frame = CGRectMake(0, 0, [self.view frame].size.width, [self.view frame].size.height);
+    _tableview.frame = CGRectMake(0, 0, [self.view frame].size.width, [self.view frame].size.height-60);
     _tableview.dataSource=self;
     _tableview.delegate=self;
-    _tableview.rowHeight=100.0;
+    _tableview.rowHeight=80.0;
     [_tableview reloadData];
     
     [self.view addSubview:_tableview];
@@ -155,7 +156,9 @@
     }
   
     /* Cell Text Setup -----------------------------------------------------*/
-    //cell.detailTextLabel.textAlignment=UITextAlignmentLeft;
+    [cell.textLabel setFont:[UIFont boldSystemFontOfSize: 18]];
+    [cell.detailTextLabel setFont:[UIFont boldSystemFontOfSize: 22]];
+    
     cell.detailTextLabel.textAlignment= NSTextAlignmentLeft; //ios6
     cell.textLabel.text=eachSyoukei.title;
     
@@ -164,25 +167,16 @@
     
     /* Detailed Text Setup -------------------------------------------------*/
     price= [NSString stringWithFormat:@"%d", eachSyoukei.price ];
-    int l = price.length;
-    for(int i=0; i<5-l; i++){
-            price=[NSString stringWithFormat:@"  %@",price];
-    }
 
     kosu= [NSString stringWithFormat:@"%d",eachSyoukei.kosu];
-    l = kosu.length;
-    for(int i=0; i<3-l; i++){
-        kosu=[NSString stringWithFormat:@"  %@",kosu];
-    }
 
     /* Picture Setup --------------------------------------------------------*/
     if(picMode){
-        cell.detailTextLabel.text=[NSString stringWithFormat:@"%@円 ×%@",price,kosu];
         cell.imageView.image=[[UIImage alloc]initWithData:[DataModels getGoodsByID:eachSyoukei.ID].contents];
     }
-    else{
-        cell.detailTextLabel.text=[NSString stringWithFormat:@"        %@円 ×%@",price,kosu];
-    }
+    
+    /* Price X Count Setup --------------------------------------------------------*/
+    cell.detailTextLabel.text=[NSString stringWithFormat:@"¥%@ × %@",price,kosu];
     return cell;
 }
 

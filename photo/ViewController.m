@@ -1,4 +1,5 @@
 //
+
 //  ViewController.m
 //  photo
 //
@@ -22,6 +23,7 @@
 #import "Goods.h"
 #import "Syoukei.h"
 #import "Settings.h"
+#import "NSString+Ruby.h"
 
 @interface ViewController ()
 
@@ -45,13 +47,18 @@
     NSMutableArray *titleArry2;
     NSMutableArray *priceArry2;
 
-    NSString *Flag;
     NSString * pricetag;
     NSString *count;
-    //音用の設定
+    
+    // Sound Resource
     NSString *path;
     NSURL *url;
     SystemSoundID soundID;
+    
+    // "PLUS"  Button Image
+    UIImage *imgbutton;
+    
+    BOOL picMode ;
     
 }
 //@synthesize uriage;
@@ -67,10 +74,16 @@
         self.edgesForExtendedLayout = UIRectEdgeNone;
     
     [super viewDidLoad];
-    Flag=@"0";
     self.title=@"売上登録";//title名
     
     self.settings = [DataAzukari getSettings];
+    allSyoukei = [DataModels getAllSyoukei];
+    
+    // Use photo or not
+    picMode = [self.settings.picmode isEqual:@"1"] ? YES : NO;
+    
+    // Button Image Initialization
+    imgbutton=[UIImage imageNamed:@"button1.gif"];
     
     //背景用の設定
     self.navigationController.navigationBar.tintColor=[UIColor brownColor];
@@ -81,6 +94,7 @@
     // minus 40 for rebouning UI;
     _tableview.frame = CGRectMake(0, 0, [self.view frame].size.width, [self.view frame].size.height-60);
     _tableview.dataSource=self;
+    _tableview.allowsSelection=NO;
     _tableview.delegate=self;
     [self.view addSubview:_tableview];
 
@@ -100,12 +114,10 @@
 -(void)viewWillAppear:(BOOL)animated{
 
     [super viewWillAppear:animated];
-
-    
     
     
     /* 画像管理モードかどうかのチェック　*/
-    if([self.settings.picmode intValue]==0){
+    if(!picMode){
         _tableview.rowHeight=60.0;    }
     else{
         if([strBumon intValue]==0){
@@ -114,16 +126,16 @@
         _tableview.rowHeight=80.0;
     }
     
-    //idArry2=[[NSMutableArray alloc]init];
-    if([strBumon intValue]>0) {       
+    /* Bumon Mode Check */
+    if([strBumon intValue]>0) {
+        // Select goods under the Bumon
         allGoods = [DataModels getAllGoodsByBumon:strBumon];
     }
     else{
         allGoods = [DataModels getAllGoods];
     }
     
-    [_tableview reloadData];//テーブルリロードで更新
-    _tableview.allowsSelection=NO;//セルタッチ禁止
+    [_tableview reloadData];
 
 }
 
@@ -148,30 +160,18 @@
     if(cell==nil){
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    if([self.settings.picmode intValue]==0){
-        [cell.textLabel setFont:[UIFont boldSystemFontOfSize: 18]];
-        [cell.detailTextLabel setFont:[UIFont boldSystemFontOfSize: 24]];
-    }
-    else{
-        [cell.textLabel setFont:[UIFont boldSystemFontOfSize: 18]];
-        [cell.detailTextLabel setFont:[UIFont boldSystemFontOfSize: 22]];
-    }
     
-    /* Get all goods if Bumon Mode is off */
-    if ( [strBumon intValue] == 0) {
-        allGoods = [DataModels getAllGoods];
-    } else {
-        allGoods = [DataModels getAllGoodsByBumon:self.strBumon];
-    }
     
-    /* Good at each line */
+   [cell.textLabel setFont:[UIFont boldSystemFontOfSize: 18]];
+   [cell.detailTextLabel setFont:[UIFont boldSystemFontOfSize: 16]];
+    
+   /* Good at each line */
     Goods * eachGood = allGoods[indexPath.row];
     
     //＋ボタンの表示
-    UIImage *imgbutton=[UIImage imageNamed:@"button1.gif"];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setBackgroundImage:imgbutton forState:UIControlStateNormal];
-    button.frame=CGRectMake(0, 0,55,55);
+    button.frame=CGRectMake(0, 0,30,30);
     [button addTarget:self
                action:@selector(control:event:)forControlEvents:UIControlEventTouchUpInside];
     button.tag = indexPath.row;
@@ -181,24 +181,18 @@
     /* Goods Name */
     cell.textLabel.text = eachGood.title;
    
-/* TODO ----------------------------------------------------------  */
+/* TODO kosu and id temporay hold goods under bumon ----------------------------------------------------------  */
     kosuArry=[[NSMutableArray alloc]init];
     [DataModels selectKosu:kosuArry selectFlag:@"1"];
-
-
-
 
     // get all syou kei
     idArry2=[[NSMutableArray alloc]init];
     [DataModels selectID:idArry2 selectFlag:@"1"];
     
     
-    allSyoukei = [DataModels getAllSyoukei];
     
-    
-    NSString *kosu=@"0";
+    int kosu = 0;
     NSString *id2=@"";
-    NSString * id1 = eachGood.ID;
     
     //小計のテーブルを参照し、個数の取得
     
@@ -206,12 +200,12 @@
         
         id2=[idArry2 objectAtIndex:n];
         
-        if([id1 intValue]==[id2 intValue]){
+        if([eachGood.ID isEqual:id2]){
             Syoukei * eachSyoukei = allSyoukei[n];
-            kosu = [NSString stringWithFormat:@"%d", eachSyoukei.kosu];
+            kosu = eachSyoukei.kosu;
 
         }
-        if([kosu intValue]>0)break;
+        if(kosu>0) break;
     }
     
     
@@ -219,49 +213,14 @@
 /* END OF TODO ----------------------------------------------------------  */
     
     /* Draw Price and Pad */
-    pricetag =[ NSString stringWithFormat:@"%d", eachGood.price ];
-    int l = [pricetag length];
-    for(int i=0; i<5-l; i++){
-        pricetag=[NSString stringWithFormat:@"  %@",pricetag];
-    }
-
+    pricetag =[ NSString stringWithFormat:@"¥%d", eachGood.price ];
+    pricetag = [pricetag leftJustify:5 with:@" "];
     
     
+    /* Use photo or not */
+    if(picMode) cell.imageView.image=[[UIImage alloc]initWithData:eachGood.contents];
     
-/* TODO ----------------------------------------------------------  */
-
-    /* Draw Kosu and Pad */
-    count=kosu;
-    if(![kosu isEqual:@"0"]){
-        for(int i=0; i<3-[kosu length]; i++){
-            count=[NSString stringWithFormat:@"  %@",count];
-        }
-    }
-    /* Draw Price with Currency as price X count when + sign is clicked */
-    NSString *price;
-    if(![kosu isEqual:@"0"])price=[NSString stringWithFormat:@"%@円 ×%@",pricetag,count];
-    else price=[NSString stringWithFormat:@"%@円   ",pricetag];
-
-    
-/* END OF TODO ----------------------------------------------------------  */
-    
-
-    /* If Picture Mode is not selected */
-    if([self.settings.picmode intValue]==0){
-        price=[NSString stringWithFormat:@"       %@",price];
-    }
-    else{
-            cell.imageView.image=[[UIImage alloc]initWithData:eachGood.contents];
-        
-        /*
-            UIImage *image=[[UIImage alloc]initWithData:eachGood.contents];
-            NSData *imgData = UIImagePNGRepresentation(image);
-            NSArray *pt=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-            NSString *dir =[pt objectAtIndex:0];
-            [imgData writeToFile:[dir stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png", eachGood.ID]] atomically:YES];
-         */
-    }
-    cell.detailTextLabel.text=price;
+    cell.detailTextLabel.text = kosu > 0 ? [NSString stringWithFormat:@"%@ x%d", pricetag, kosu] : pricetag;
     
     return cell;
 }
@@ -329,19 +288,15 @@
             /* For cell detailed text */
             NSString *price;
             pricetag =[ NSString stringWithFormat:@"%d", selectedGoods.price ];
-            int l = [pricetag length];
-            for(int i=0; i<5-l; i++){
-                pricetag=[NSString stringWithFormat:@"  %@",pricetag];
-            }
+            pricetag = [pricetag leftJustify:5 with:@" "];
        
             //idが存在しない場合
-            /* Flag 0 */
             /* If no previous Syoukei exists */
             if(kakunin==0){
                 // Create Syoukei Table Insert to Syoukei
                 Syoukei * s = [[Syoukei alloc] initWithID:selectedGoods.ID title:selectedGoods.title price:selectedGoods.price kosu:1];
                 [DataModels insertSyoukei:s];
-                price=[NSString stringWithFormat:@"%@円 ×    1",pricetag];
+                price=[NSString stringWithFormat:@"¥%@ ×1",pricetag];
             }
             //idが存在する場合
             else{
@@ -349,20 +304,10 @@
                 kosu=[NSString stringWithFormat:@"%d",[kosu intValue]+1];
                 [DataModels updateSyoukeiByID:selectedGoods.ID withKosu:kosu];
                 
-                // Show count for padding
-                count=kosu;
-                for(int i=0; i<3-[kosu length]; i++){
-                    count=[NSString stringWithFormat:@"  %@",count];
-                }
-                
                 // Show detailed price
-                price =[NSString stringWithFormat:@"%@円 ×%@",pricetag,count];
+                price =[NSString stringWithFormat:@"¥%@ ×%@",pricetag,kosu];
 
             }
-        
-            /* If pic mode give more space */
-            if([self.settings.picmode intValue]==0)
-                price=[NSString stringWithFormat:@"       %@",price];
         
             cell.detailTextLabel.text=price;
         
