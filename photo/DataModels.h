@@ -44,6 +44,7 @@
 +(Goods *) getBumonByID : (NSString *) ID ;
 +(NSMutableArray *) getAllSyoukei;
 +(void) insertSyoukei : (Syoukei *) s ;
++(Syoukei *) getSyoukeiByID : (NSString *) ID;
 +(void) updateSyoukeiByID : (NSString *) ID
                  withKosu : (NSString *) kosu;
 + (void) saveToSeisan : (Syoukei *) s

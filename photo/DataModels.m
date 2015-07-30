@@ -636,6 +636,29 @@
     
 }
 
++(Syoukei *) getSyoukeiByID : (NSString *) ID {
+    FMDatabase *db = [DataModels getBurDataDB];
+    NSString * query = [NSString stringWithFormat:@"SELECT * FROM Syoukei WHERE id = '%@'", ID];
+    
+    [db open];
+    
+    
+    FMResultSet *results=[db executeQuery: query];
+    Syoukei * s = [Syoukei alloc];
+    
+    while ([results next]) {
+        s =         [[Syoukei alloc]
+                       initWithID : [results stringForColumn:@"id"]
+                       title      : [results stringForColumn:@"title"]
+                       price      : [results intForColumn:@"price"]
+                       kosu : [results intForColumn:@"Kosu"]];
+    }
+    
+    [db close];
+    
+    return s;
+}
+
 +(void) insertSyoukei : (Syoukei *) s {
     FMDatabase * db = [DataModels getBurDataDB];
     [db open];

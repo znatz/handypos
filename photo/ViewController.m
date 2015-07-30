@@ -29,32 +29,19 @@
     NSMutableArray * updateSyoukei;
 
     
-    /* temporary load all pages goods id and count */
-    NSMutableArray *kosuArry;
-    NSMutableArray *idArry2;
-
-    
-    NSMutableArray *titleArry2;
-    NSMutableArray *priceArry2;
-
-    NSString * pricetag;
-    NSString *count;
+    NSString       * pricetag;
     
     // Sound Resource
     NSString *path;
     NSURL *url;
     SystemSoundID soundID;
     
-    // "PLUS"  Button Image
     UIImage *imgbutton;
-    
-    // Cache goods image
     NSMutableArray * all_goods_images;
     
     BOOL picMode ;
     
 }
-//@synthesize uriage;
 
 @synthesize row_num;
 @synthesize tableview=_tableview;
@@ -122,15 +109,14 @@
  
     /* ----------------------------------  Local variables           -------------------------*/
     Goods * eachGood = allGoods[indexPath.row];
-    kosuArry         = [[NSMutableArray alloc]init];
-    idArry2          = [[NSMutableArray alloc]init];
+    int kosu         = 0;
     /* ----------------------------------  END : Local variables     -------------------------*/
     
     
     /* ----------------------------------  Cell initialization       -------------------------*/
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if(cell==nil) cell = [[UITableViewCell alloc] initWithStyle : UITableViewCellStyleSubtitle reuseIdentifier : CellIdentifier];
+    UITableViewCell *cell   = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if(cell==nil) cell      = [[UITableViewCell alloc] initWithStyle : UITableViewCellStyleSubtitle reuseIdentifier : CellIdentifier];
     /* ----------------------------------  END : Cell initialization -------------------------*/
     
     
@@ -138,13 +124,16 @@
     [cell setOpaque:YES];
     [cell.textLabel setFont:[UIFont boldSystemFontOfSize: 18]];
     [cell.detailTextLabel setFont:[UIFont boldSystemFontOfSize: 16]];
+    if(picMode) cell.imageView.image= (UIImage *) [all_goods_images objectAtIndex:indexPath.row];
+    cell.imageView.frame    = CGRectMake(0,0,10,10);
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *button        = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setBackgroundImage:imgbutton forState:UIControlStateNormal];
     button.frame=CGRectMake(0, 0,40,40);
-    [button addTarget:self
-               action:@selector(control:event:)forControlEvents:UIControlEventTouchUpInside];
-    button.tag = indexPath.row;
+    [button addTarget : self
+               action : @selector(control:event:)
+     forControlEvents : UIControlEventTouchUpInside];
+    button.tag              = [eachGood.ID intValue] * 1000 + indexPath.row;
     cell.accessoryView=button;
     
     cell.textLabel.text = eachGood.title;
@@ -153,141 +142,73 @@
     
     
     /* ----------------------------------  Cell contents setup       -------------------------*/
-    [DataModels selectKosu : kosuArry
-                selectFlag : @"1"];
-    [DataModels selectID   : idArry2
-                selectFlag : @"1"];
-    
-    
-    int kosu = 0;
-    NSString *id2=@"";
-    
-    //小計のテーブルを参照し、個数の取得
-    
-    for (int n=0; n<idArry2.count; n++) {
-        
-        id2=[idArry2 objectAtIndex:n];
-        
-        if([eachGood.ID isEqual:id2]){
-            Syoukei * eachSyoukei = allSyoukei[n];
+    for (Syoukei * eachSyoukei in allSyoukei) {
+        if ([eachSyoukei.ID isEqual: eachGood.ID]) {
             kosu = eachSyoukei.kosu;
-
         }
-        if(kosu>0) break;
     }
     
-    
-
-/* END OF TODO ----------------------------------------------------------  */
-    
-    /* Draw Price and Pad */
     pricetag =[ NSString stringWithFormat:@"¥%d", eachGood.price ];
     pricetag = [pricetag leftJustify:5 with:@" "];
-    
-    
-    /* Use photo or not */
-    if(picMode) cell.imageView.image= (UIImage *) [all_goods_images objectAtIndex:indexPath.row];
-    cell.imageView.frame = CGRectMake(0,0,10,10);
-    
     cell.detailTextLabel.text = kosu > 0 ? [NSString stringWithFormat:@"%@ x%d", pricetag, kosu] : pricetag;
+    /* ----------------------------------  END : Cell contents setup  -------------------------*/
     
     return cell;
 }
 
-//+ボタンがタップされたときの処理 "PLUS" button handler
+/* PLUS button handler */
 -(void)control:(id)sender event:(id)event{
     
+    /* ----------------------------------  Sound effect              -------------------------*/
     AudioServicesPlaySystemSound(soundID);
+    /* ----------------------------------  END : Sound effect        -------------------------*/
     
     
+    /* ----------------------------------  Retrieve context          -------------------------*/
+    UIButton * clickedButton    = (UIButton *) sender;
+    int selectedRow             = clickedButton.tag % 1000;
+    NSString * selectedGoodsID  = [NSString stringWithFormat:@"%d",(clickedButton.tag - selectedRow)/1000];
+    /* ----------------------------------  END : Retrieve context    -------------------------*/
     
-    /* Get to know which goods is clicked */
-    UIButton * clickedButton = (UIButton *) sender;
-    int ghou = clickedButton.tag;
     
-    
-    /* Get selected cell object for changing its detailed text */
-    NSIndexPath * indexPath = [NSIndexPath indexPathForRow:ghou inSection:0];
-    UITableViewCell *cell=[_tableview cellForRowAtIndexPath:indexPath];
-
-    /* Get selected Goods */
-    
-//    if(ghou<titleArry.count){
-        if(ghou < allGoods.count){
-
-
-
-
-            if([strBumon intValue]>0) {
-                allGoods = [DataModels getAllGoodsByBumon:strBumon];
-            }
-            else{
-                allGoods = [DataModels getAllGoods];
-            }
-            
-            Goods * selectedGoods = allGoods[ghou];
-            allSyoukei = [DataModels getAllSyoukei];
-                   
-            /* From Burdata */
-            /* kosuArray idArray are appended but not refilled!! */
-            [DataModels selectKosu:kosuArry selectFlag:@"1"];
-            [DataModels selectID:idArry2 selectFlag:@"1"];
-        
-            
-/*********** kosuArry is updated everytime but allSyoukie is NOT WIP WIP ******************************************/
-
-        
-            int kakunin=0;
-            
-            NSString *kosu;
-
-       
-            //既存のidかどうかのチェック
-            for(int n=0;n<idArry2.count;n++){
-                NSString *idno=[idArry2 objectAtIndex:n];
-                if([selectedGoods.ID intValue]==[idno intValue]){
-                     
-                    kosu=[kosuArry objectAtIndex:n];
-                    kakunin=1;//既存のidの場合
-
-                }
-            }
-          
-            
-            /* For cell detailed text */
-            NSString *price;
-            pricetag =[ NSString stringWithFormat:@"%d", selectedGoods.price ];
-            pricetag = [pricetag leftJustify:5 with:@" "];
-       
-            //idが存在しない場合
-            /* If no previous Syoukei exists */
-            if(kakunin==0){
-                // Create Syoukei Table Insert to Syoukei
-                Syoukei * s = [[Syoukei alloc] initWithID:selectedGoods.ID title:selectedGoods.title price:selectedGoods.price kosu:1];
+    /* ----------------------------------  Update syoukei            -------------------------*/
+    Syoukei * s;
+    for (Goods * g in allGoods) {
+        if ([g.ID isEqual: selectedGoodsID]) {
+            s = [DataModels getSyoukeiByID:g.ID];
+            if (s.ID) {
+                s.kosu ++;
+                [DataModels updateSyoukeiByID : g.ID
+                                     withKosu : [NSString stringWithFormat:@"%d",s.kosu]];
+                break;
+            } else {
+                s = [[Syoukei alloc] initWithID : g.ID
+                                          title : g.title
+                                          price : g.price
+                                           kosu : 1];
                 [DataModels insertSyoukei:s];
-                price=[NSString stringWithFormat:@"¥%@ ×1",pricetag];
+                break;
             }
-            //idが存在する場合
-            else{
-                /* update if selected */
-                kosu=[NSString stringWithFormat:@"%d",[kosu intValue]+1];
-                [DataModels updateSyoukeiByID:selectedGoods.ID withKosu:kosu];
-                
-                // Show detailed price
-                price =[NSString stringWithFormat:@"¥%@ ×%@",pricetag,kosu];
-
-            }
-        
-            cell.detailTextLabel.text=price;
-        
+            
         }
-           
+    }
+    /* ----------------------------------  END : Update syoukei       -------------------------*/
+    
+    
+    /* ----------------------------------  Update cell                -------------------------*/
+    UITableViewCell * selectedCell = [_tableview cellForRowAtIndexPath:[NSIndexPath indexPathForRow:selectedRow inSection:0] ];
+    NSString * new_pricetag        = [NSString stringWithFormat:@"¥%d", s.price ];
+               new_pricetag        = [new_pricetag leftJustify:5 with:@" "];
+    selectedCell.detailTextLabel.text = [NSString stringWithFormat:@"%@ x%d", new_pricetag, s.kosu];
+    /* ----------------------------------  END : Update cell           -------------------------*/
+    
 }
 
 //小計が押されたときの処理
 -(void)syoukei_controller{
     AudioServicesPlaySystemSound(soundID);
  
+    allSyoukei = [DataModels getAllSyoukei];
     if(allSyoukei.count==0) {
 
         UIAlertView *av =[[UIAlertView alloc]
@@ -365,6 +286,7 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    allSyoukei = [DataModels getAllSyoukei];    // If not reload it, pricetag will not change as supposed when kosu is modified in KosuViewController
     [_tableview reloadData];
 }
 
