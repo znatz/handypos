@@ -1,19 +1,10 @@
-//
-
-//  ViewController.m
-//  photo
-//
-//  Created by POSCO on 12/07/12.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
-
-/* ZNATZ 
+/* ZNATZ
  
  This view is navigated from TantoViewController with strBumon equals to 0
  OR                     from BumonViewController with strBumon equals to the selected.
  
  */
 
-//
 #import "SyoukeiViewController.h"
 #import "ViewController.h"
 #import "MainViewController.h"
@@ -42,7 +33,6 @@
     NSMutableArray *kosuArry;
     NSMutableArray *idArry2;
 
-    
     
     NSMutableArray *titleArry2;
     NSMutableArray *priceArry2;
@@ -77,131 +67,96 @@
         self.edgesForExtendedLayout = UIRectEdgeNone;
     
     [super viewDidLoad];
-    self.title=@"売上登録";//title名
     
-    self.settings = [DataAzukari getSettings];
-    allSyoukei = [DataModels getAllSyoukei];
-    
-    // Use photo or not
-    picMode = [self.settings.picmode isEqual:@"1"] ? YES : NO;
-    
-    // Button Image Initialization
-    imgbutton=[UIImage imageNamed:@"button1.gif"];
-    
-    //背景用の設定
+    /* ----------------------------------  UI and Sound setup --------------------------------*/
+    self.title=@"売上登録";
     self.navigationController.navigationBar.tintColor=[UIColor brownColor];
     UIImage *imgback=[UIImage imageNamed:@"back.bmp"];
     self.view.backgroundColor=[UIColor colorWithPatternImage:imgback];
     
-    _tableview=[[UITableView alloc]init];
-    // minus 40 for rebouning UI;
-    _tableview.frame = CGRectMake(0, 0, [self.view frame].size.width, [self.view frame].size.height-60);
-    _tableview.dataSource=self;
-    _tableview.allowsSelection=NO;
-    _tableview.delegate=self;
-    [self.view addSubview:_tableview];
-
+    UIBarButtonItem *syoukei = [[UIBarButtonItem alloc]initWithTitle:@"小計" style:UIBarButtonItemStyleBordered target:self action:@selector(syoukei_controller)];
+    self.navigationItem.rightBarButtonItem=syoukei;
     
-    //音用の設定
     path=[[NSBundle mainBundle]pathForResource:@"butin" ofType:@"wav"];
     url=[NSURL fileURLWithPath:path];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)url,&soundID);
     
-    //右上のボタンの表示
-    UIBarButtonItem *syoukei = [[UIBarButtonItem alloc]initWithTitle:@"小計" style:UIBarButtonItemStyleBordered target:self action:@selector(syoukei_controller)];
-    self.navigationItem.rightBarButtonItem=syoukei;//右側にボタン設置
+    imgbutton=[UIImage imageNamed:@"button1.gif"];
+    /* ----------------------------------  END : UI and Sound setup --------------------------*/
     
-}
+    
+    
+    /* ----------------------------------  Table setup ---------------------------------------*/
+    _tableview    = [[UITableView alloc]init];
+    _tableview.frame        = CGRectMake(0, 0, [self.view frame].size.width, [self.view frame].size.height-60);
+    _tableview.dataSource   = self;
+    _tableview.delegate     = self;
+    _tableview.rowHeight    = picMode ? 80.0 : 60.0;
+    _tableview.allowsSelection = NO;
+    [self.view addSubview:_tableview];
+    /* ----------------------------------  END : Table setup ---------------------------------*/
 
-//呼ばれるたびデータとテーブルを更新
--(void)viewWillAppear:(BOOL)animated{
-
-    [super viewWillAppear:animated];
     
+    /* ----------------------------------  Contents preparation ------------------------------*/
+    self.settings = [DataAzukari getSettings];
+    allSyoukei    = [DataModels getAllSyoukei];
     
-    /* 画像管理モードかどうかのチェック　*/
-    if(!picMode){
-        _tableview.rowHeight=60.0;    }
-    else{
-        if([strBumon intValue]==0){
-            allGoods = [DataModels getAllGoods];
-        }
-        _tableview.rowHeight=80.0;
-    }
+    picMode       = [self.settings.picmode isEqual:@"1"] ? YES : NO;
     
-    /* Bumon Mode Check */
-    if([strBumon intValue]>0) {
-        allGoods = [DataModels getAllGoodsByBumon:strBumon];
-    }
-    else{
-        allGoods = [DataModels getAllGoods];
-    }
+    if([strBumon intValue]>0) allGoods = [DataModels getAllGoodsByBumon:strBumon];
+    else allGoods = [DataModels getAllGoods];
     
-    // Fetch goods images
     all_goods_images = [[NSMutableArray alloc] init];
     for (Goods * g in allGoods) {
-        UIImage * image =[[UIImage alloc]initWithData:g.contents];
+        UIImage * image     = [[UIImage alloc]initWithData:g.contents];
         [all_goods_images addObject:image];
     }
-    
     all_goods_images = [self arrayOfThumbnailsOfSize:CGSizeMake(80.0, 80.0) fromArray:all_goods_images];
+    /* ----------------------------------  END : Contents preparation -------------------------*/
     
-    [_tableview reloadData];
-
 }
 
-//行数の設定
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{  
-    return allGoods.count;
-}
 
-//セクション数の設定
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
-}
-
-//セルに表示する内容
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
  
-    /* Initialize Cell */
-    static NSString *CellIdentifier=@"Cell";//空のセルを生成
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if(cell==nil){
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
-    
-    [cell setOpaque:YES];
-    
-    
-   [cell.textLabel setFont:[UIFont boldSystemFontOfSize: 18]];
-   [cell.detailTextLabel setFont:[UIFont boldSystemFontOfSize: 16]];
-    
-   /* Good at each line */
+    /* ----------------------------------  Local variables           -------------------------*/
     Goods * eachGood = allGoods[indexPath.row];
+    kosuArry         = [[NSMutableArray alloc]init];
+    idArry2          = [[NSMutableArray alloc]init];
+    /* ----------------------------------  END : Local variables     -------------------------*/
     
-    //＋ボタンの表示
+    
+    /* ----------------------------------  Cell initialization       -------------------------*/
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if(cell==nil) cell = [[UITableViewCell alloc] initWithStyle : UITableViewCellStyleSubtitle reuseIdentifier : CellIdentifier];
+    /* ----------------------------------  END : Cell initialization -------------------------*/
+    
+    
+    /* ----------------------------------  Cell UI setup             -------------------------*/
+    [cell setOpaque:YES];
+    [cell.textLabel setFont:[UIFont boldSystemFontOfSize: 18]];
+    [cell.detailTextLabel setFont:[UIFont boldSystemFontOfSize: 16]];
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setBackgroundImage:imgbutton forState:UIControlStateNormal];
     button.frame=CGRectMake(0, 0,40,40);
     [button addTarget:self
                action:@selector(control:event:)forControlEvents:UIControlEventTouchUpInside];
     button.tag = indexPath.row;
-    cell.accessoryView=button;  
-        
+    cell.accessoryView=button;
     
-    /* Goods Name */
     cell.textLabel.text = eachGood.title;
-   
-/* TODO kosu and id temporay hold goods under bumon ----------------------------------------------------------  */
-    kosuArry=[[NSMutableArray alloc]init];
-    [DataModels selectKosu:kosuArry selectFlag:@"1"];
-
-    // get all syou kei
-    idArry2=[[NSMutableArray alloc]init];
-    [DataModels selectID:idArry2 selectFlag:@"1"];
+    /* ----------------------------------  END : Cell UI setup       -------------------------*/
     
+    
+    
+    /* ----------------------------------  Cell contents setup       -------------------------*/
+    [DataModels selectKosu : kosuArry
+                selectFlag : @"1"];
+    [DataModels selectID   : idArry2
+                selectFlag : @"1"];
     
     
     int kosu = 0;
@@ -408,4 +363,16 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [_tableview reloadData];
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return allGoods.count;
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
 @end
