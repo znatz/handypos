@@ -124,6 +124,57 @@
     return formatted;
 }
 
+-(void) printToKichenWith: (NSMutableArray *) ts syoukei : (NSMutableArray *) ss {
+    
+    TransferData * t = ts[0];
+    
+    NSString * date_receipt = [NSString stringWithFormat:@"%@     No.%@\r\n", [t.time substringToIndex:14], t.receiptNo];
+    NSString * tantou       = [NSString stringWithFormat:@"No.%@:%@", t.tantoID, [DataModels getTantoNameByID:t.tantoID]];
+               tantou       = [tantou leftJustify:15 with:@" "];
+               tantou       = [NSString stringWithFormat:@"%@テーブル:%@\r\n\r\n", tantou, t.tableNO];
+    
+    [self normal_left:date_receipt];
+    [self normal_left:tantou];
+    
+    NSString * list_header  = @"品 名　       　      数  量\r\n";
+    [self normal_center:list_header];
+     
+    int i;
+    NSString * line = [[NSString alloc] init];
+
+    for (i = 0; i<ss.count; i++ ) {
+        Syoukei * s = ss[i];
+        
+        line     = [NSString stringWithFormat:@"%@", s.title];
+        line     = [self leftJPJustify:line amount:28 with:@" "];
+        line     = [NSString stringWithFormat:@"%@%d\r\n", line, s.kosu];
+        [self normal_left:line];
+        [self printSeparator];
+        
+    }
+    
+    [self double_width_left:@"\r\n"];
+}
+
+
+-(NSString*)leftJPJustify:(NSString *) input amount:(NSInteger )amount with:(NSString*)padString{
+  if (amount <= input.length * 2)
+    return input;
+  NSString *pad = @"";
+  NSInteger c = 0;
+  for(NSInteger i = 0;i<amount-(input.length * 2);i++){
+    pad = [NSString stringWithFormat:@"%@%c",pad,[padString characterAtIndex:c++]];
+    if(c >= padString.length)
+      c = 0;
+  }
+  NSString *result = [NSString stringWithFormat:@"%@%@",input,pad];
+  return result;
+}
+
+-(void) printSeparator {
+    [self normal_center:@"------------------------------\r\n"];
+}
+
 -(void) normal_left : (NSString *) line {
 	unsigned char leftAlign[3] = {0x1B,0x61,0x00};
 	unsigned char normalSize[3] = {0x1D,0x21,0x00};

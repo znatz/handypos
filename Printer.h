@@ -15,6 +15,7 @@
 - (Printer *) initWithURL : (NSString *) url;
 - (void) printHeader ;
 -(void) printContentsWith: (NSMutableArray *) ts syoukei : (NSMutableArray *) ss ;
+-(void) printToKichenWith: (NSMutableArray *) ts syoukei : (NSMutableArray *) ss ;
 -(void) printFooter ;
 -(void) close ;
 @end

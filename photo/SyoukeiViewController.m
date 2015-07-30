@@ -83,12 +83,10 @@
     self.title = [self setupTitle:allSyoukei];
     
     /* Printer Setup */
-    /*
     NSUserDefaults * defaulSettings = [NSUserDefaults standardUserDefaults];
     NSString * printerURL = [defaulSettings valueForKey:@"PrinterURL"];
     printerURL = printerURL ? printerURL : @"192.168.1.231";
     self.printer = [[Printer alloc] initWithURL:printerURL];
-     */
     
     //背景用の設定
     self.navigationController.navigationBar.tintColor=[UIColor brownColor];
@@ -313,12 +311,19 @@
     [self.printer close];
      */
     
+    
+    
     // TODO Cleanup before return to home!
     [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:0]animated:YES];//保存後ホームに戻る
    
+    /* Print to kichen ------------------------------------ */
+    [self.printer printToKichenWith:[DataModels getAllTransfer] syoukei:allSyoukei];
+    [self.printer close];
+    
     /* Send To Kichen ----------------------------------- */
     [ConnectionManager uploadFile:@"BurData.sqlite"];
     [DataModels dropTransferData];
+    
     
     AudioServicesPlaySystemSound(soundID);
 }
