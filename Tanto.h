@@ -11,6 +11,8 @@
 @interface Tanto : NSObject
 @property NSString * _ID;
 @property NSString * _name;
+@property int shop;
 -(Tanto *) initWithID : (NSString *) ID
-                 name : (NSString *) name;
+                 name : (NSString *) name
+                 shop : (int) s;
 @end

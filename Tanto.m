@@ -10,10 +10,12 @@
 
 @implementation Tanto
 -(Tanto *) initWithID : (NSString *) ID
-                 name : (NSString *) name {
+                 name : (NSString *) name
+                 shop : (int) s {
     Tanto * t = [Tanto alloc];
     t._ID = ID;
     t._name = name;
+    t.shop = s;
     return t;
 }
 @end

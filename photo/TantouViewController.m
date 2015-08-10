@@ -15,6 +15,7 @@
 #import "Seisan.h"
 #import "DataUpdate.h"
 #import "Settings.h"
+#import "ShopSettings.h"
 #import "DataMente.h"
 
 @interface TantouViewController (){
@@ -75,7 +76,10 @@
     
     
     
-    tantos = [DataModels getAllTantos];
+    ShopSettings * shopSettings = [DataMente getShopSettings];
+    NSLog(@"%@", shopSettings.tempo);
+//    tantos = [DataModels getAllTantos];
+    tantos = [DataModels getTantosByShopID:shopSettings.tempo];
     defaultTanto = tantos[0];
     name.text = defaultTanto._name;
     idno.text = @"担当者";

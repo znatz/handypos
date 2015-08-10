@@ -83,11 +83,22 @@
 }
 -(IBAction)uriage:(id)sender{
     
+    ShopSettings * shopSettings = [DataMente getShopSettings];
     if([DataModels getTantoCount]>0){
-        AudioServicesPlaySystemSound(soundID);
-        TantouViewController *tvc=[self.storyboard
-                                   instantiateViewControllerWithIdentifier:@"Tantou"];
-        [self.navigationController pushViewController:tvc animated:YES];
+        if ([DataModels getTantosByShopID:shopSettings.tempo].count > 0) {
+            AudioServicesPlaySystemSound(soundID);
+            TantouViewController *tvc=[self.storyboard
+                                       instantiateViewControllerWithIdentifier:@"Tantou"];
+            [self.navigationController pushViewController:tvc animated:YES];
+        } else {
+            UIAlertView *av =[[UIAlertView alloc] initWithTitle : @"担当"
+                                                        message : @"該当店舗の担当が登録されていません"
+                                                       delegate : self
+                                              cancelButtonTitle : nil
+                                              otherButtonTitles : @"OK", nil];
+            [av show];
+            
+        }
         
     }
     else{

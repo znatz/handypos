@@ -33,6 +33,7 @@
 
 +(NSString *) getTanpoNameByID : (NSString *) i;
 +(NSString *) getTantoNameByID : (NSString *) i;
++(NSMutableArray *) getTantosByShopID : (NSString *) i ;
 
 +(int)getTantoCount ;
 +(NSMutableArray *) getAllTantos;

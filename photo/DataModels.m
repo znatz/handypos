@@ -331,7 +331,9 @@
     NSMutableArray * tantos = [[NSMutableArray alloc] init];
     while ([results next]) {
         Tanto * t = [[Tanto alloc] initWithID:[results stringForColumn:@"id"]
-                                         name:[results stringForColumn:@"name"]];
+                                         name:[results stringForColumn:@"name"]
+                                         shop:[results intForColumn:@"shop"]];
+
         [tantos addObject:t];
     }
     
@@ -707,6 +709,24 @@
     }
     [db close];
     return name;
+}
+
+
++(NSMutableArray *) getTantosByShopID : (NSString *) i {
+    FMDatabase * db = [DataModels getMasterDB];
+    
+    NSMutableArray * allTantos = [[NSMutableArray alloc] init];
+
+    [db open];
+    FMResultSet *results=[db executeQuery:@"SELECT * FROM BTAMAS WHERE shop = ?", i];
+    while ([results next]) {
+        Tanto * t = [[Tanto alloc] initWithID : [results stringForColumn:@"id"]
+                                         name : [results stringForColumn:@"name"]
+                                         shop : [results intForColumn:@"shop"]];
+        [allTantos addObject:t];
+    }
+    [db close];
+    return allTantos;
 }
 
 
