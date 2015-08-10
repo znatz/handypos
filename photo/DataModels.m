@@ -19,7 +19,7 @@
 #import "TransferData.h"
 #import "Tenpo.h"
 
-/* BTAMAS : 担当 */
+/* Employees : 担当 */
 /* BRUMAS : MASTER 部門 */
 /* BTSMAS : MASTER 商品 */
 
@@ -27,7 +27,7 @@
 #define DB_FILE_Master @"Master.sqlite"
 #define DB_FILE_BurData @"BurData.sqlite"
 // all tantou
-#define ALL_Tanto @"SELECT * FROM BTAMAS"
+#define ALL_Tanto @"SELECT * FROM Employees"
 #define ALL_Goods @"SELECT * FROM BTSMAS ORDER BY Kosu DESC,price DESC"
 #define ALL_Bumon @"SELECT * FROM BBUMAS ORDER BY id"
 
@@ -703,7 +703,7 @@
 
     NSString * name = [[NSString alloc] init];
     [db open];
-    FMResultSet *results=[db executeQuery:@"SELECT name FROM BTAMAS WHERE id = ?", i];
+    FMResultSet *results=[db executeQuery:@"SELECT name FROM Employees WHERE id = ?", i];
     while ([results next]) {
         name = [results stringForColumn:@"name"];
     }
@@ -718,7 +718,7 @@
     NSMutableArray * allTantos = [[NSMutableArray alloc] init];
 
     [db open];
-    FMResultSet *results=[db executeQuery:@"SELECT * FROM BTAMAS WHERE shop = ?", i];
+    FMResultSet *results=[db executeQuery:@"SELECT * FROM Employees WHERE shop = ?", i];
     while ([results next]) {
         Tanto * t = [[Tanto alloc] initWithID : [results stringForColumn:@"id"]
                                          name : [results stringForColumn:@"name"]
