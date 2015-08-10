@@ -22,7 +22,7 @@
 @implementation TenpoSettei{
 }
 
-@synthesize lblTenpoID;
+//@synthesize lblTenpoID;
 @synthesize lblTenpo;
 @synthesize lblRejiNo;
 @synthesize lblReceiptNo;
@@ -71,7 +71,7 @@
     self.navigationItem.rightBarButtonItem=Change;//右側にボタン設置
     
 
-    lblTenpoID.text = self.shopsettings.tempo;
+//    lblTenpoID.text = self.shopsettings.tempo;
     lblRejiNo.text  = self.shopsettings.reji;
     
     
@@ -90,7 +90,7 @@
     Tenpo * selectedTenpo = self.allTenpo[self.currentTenpo];
     self.shopsettings.tempo = selectedTenpo.ID;
     lblTenpo.text = selectedTenpo.tenpo;
-    lblTenpoID.text = self.shopsettings.tempo;
+//    lblTenpoID.text = self.shopsettings.tempo;
     
     if (self.currentTenpo > 0) {
         self.currentTenpo --;
@@ -102,7 +102,7 @@
      Tenpo * selectedTenpo = self.allTenpo[self.currentTenpo];
     self.shopsettings.tempo = selectedTenpo.ID;
     lblTenpo.text = selectedTenpo.tenpo;
-    lblTenpoID.text = self.shopsettings.tempo;
+//    lblTenpoID.text = self.shopsettings.tempo;
     
     if (self.currentTenpo < self.allTenpo.count - 1) {
         self.currentTenpo ++;
