@@ -35,7 +35,7 @@
 #define INSERT_to_Seisan @"INSERT INTO Seisan(time,re_no,id,title,bumon,price,Kosu) VALUES(?,?,?,?,?,?,?)"
 #define INIT_Syoukei @"CREATE TABLE IF NOT EXISTS Syoukei(id TEXT,title TEXT,price INTEGER,Kosu INTEGER)"
 #define INIT_Nikkei @"CREATE TABLE IF NOT EXISTS Nikkei(id TEXT,title TEXT,price INTEGER,Kosu INTEGER)"
-#define Tanpo_By_ID @"SELECT * FROM BMIMAS WHERE id = ? ORDER BY id"
+#define Tanpo_By_ID @"SELECT * FROM shops WHERE id = ? ORDER BY id"
 #define Goods_By_ID @"SELECT * FROM BTSMAS WHERE id = ?"
 
 //SQL文の管理
@@ -55,7 +55,7 @@
 #define ALL_Nikkei @"SELECT * FROM Nikkei ORDER BY Kosu DESC,price DESC"
 #define ALL_Nebiki @"SELECT * FROM Nebiki"
 #define ALL_Henpin @"SELECT * FROM Henpin ORDER BY Kosu DESC,price DESC"
-#define ALL_BMIMAS @"SELECT * FROM BMIMAS ORDER BY id"
+#define ALL_shops @"SELECT * FROM shops ORDER BY id"
 
 #define DEL_Syoukei @"DELETE FROM Syoukei"
 #define DEL_Nikkei @"DELETE FROM Nikkei"
@@ -690,7 +690,7 @@
 
     NSString * name = [[NSString alloc] init];
     [db open];
-    FMResultSet *results=[db executeQuery:@"SELECT Tenpo FROM BMIMAS WHERE id = ?", i];
+    FMResultSet *results=[db executeQuery:@"SELECT Tenpo FROM shops WHERE id = ?", i];
     while ([results next]) {
         name = [results stringForColumn:@"Tenpo"];
     }
@@ -736,7 +736,7 @@
 
     NSMutableArray * allTenpo = [[NSMutableArray alloc] init];
     [db open];
-    FMResultSet *results=[db executeQuery:@"SELECT * FROM BMIMAS"];
+    FMResultSet *results=[db executeQuery:@"SELECT * FROM shops"];
     while ([results next]) {
         Tenpo * t = [[Tenpo alloc] initWithID:[NSString stringWithFormat:@"%d", [results intForColumn:@"id"]] tenpo:[results stringForColumn:@"Tenpo"]];
         [allTenpo addObject:t];
