@@ -61,7 +61,7 @@
     [self normal_center:list_header];
      
     int i;
-    NSString * line = [[NSString alloc] init];
+    NSString * line;
 
     for (i = 0; i<ss.count; i++ ) {
         Syoukei * s = ss[i];
@@ -140,7 +140,7 @@
     [self normal_center:list_header];
      
     int i;
-    NSString * line = [[NSString alloc] init];
+    NSString * line;
 
     for (i = 0; i<ss.count; i++ ) {
         Syoukei * s = ss[i];

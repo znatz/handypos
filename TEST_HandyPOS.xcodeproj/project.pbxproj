@@ -15,10 +15,11 @@
 		674ADC3A1B5CE4DD0006A23C /* ReceiptComment.txt in Resources */ = {isa = PBXBuildFile; fileRef = 674ADC391B5CE4DD0006A23C /* ReceiptComment.txt */; };
 		67521E8F16424DE500A60052 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = 67521E8E16424DE500A60052 /* button3.png */; };
 		67521E921642553F00A60052 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = 67521E911642553F00A60052 /* button4.png */; };
-		675308E6175827A00003CC1C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 675308E5175827A00003CC1C /* Default-568h@2x.png */; };
 		67563F331B4B7AD000DEA4A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67563F321B4B7AD000DEA4A6 /* ViewController.m */; };
 		676F91CA1B56570700DA5183 /* Tenpo.m in Sources */ = {isa = PBXBuildFile; fileRef = 676F91C91B56570700DA5183 /* Tenpo.m */; };
 		6776FBD31B4FA2FE002557FE /* TransferData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6776FBD21B4FA2FE002557FE /* TransferData.m */; };
+		6783F44B1B819EC4004F8DDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6783F44A1B819EC4004F8DDD /* Images.xcassets */; };
+		6783F44E1B819F4D004F8DDD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6783F44C1B819F4D004F8DDD /* Default-568h@2x.png */; };
 		679F5569168BD58200AD40FF /* DataMente.m in Sources */ = {isa = PBXBuildFile; fileRef = 679F5568168BD58200AD40FF /* DataMente.m */; };
 		679F556F168BE38A00AD40FF /* UriageSettei.m in Sources */ = {isa = PBXBuildFile; fileRef = 679F556E168BE38A00AD40FF /* UriageSettei.m */; };
 		679F557F168C1ED400AD40FF /* button_L.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F557D168C1ED400AD40FF /* button_L.png */; };
@@ -46,7 +47,6 @@
 		67C0E9991642165200016E70 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C0E9981642165200016E70 /* button.png */; };
 		67C0E99B16421BFC00016E70 /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C0E99A16421BFC00016E70 /* button2.png */; };
 		67C131A9168AB87E00B580D9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BEB8B4165DB572005AC9EA /* Icon.png */; };
-		67C131AB168AB88700B580D9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C131AA168AB88700B580D9 /* Default.png */; };
 		67C1888E15E219BD00E33452 /* DataUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C1888D15E219BD00E33452 /* DataUpdate.m */; };
 		67C2E9BD1B4A509700A3B898 /* Seisan.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C2E9BC1B4A509700A3B898 /* Seisan.m */; };
 		67C2E9C01B4A5E0700A3B898 /* Nebiki.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C2E9BF1B4A5E0700A3B898 /* Nebiki.m */; };
@@ -91,7 +91,6 @@
 		674ADC391B5CE4DD0006A23C /* ReceiptComment.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReceiptComment.txt; sourceTree = SOURCE_ROOT; };
 		67521E8E16424DE500A60052 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button3.png; path = picture/button3.png; sourceTree = SOURCE_ROOT; };
 		67521E911642553F00A60052 /* button4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button4.png; path = picture/button4.png; sourceTree = SOURCE_ROOT; };
-		675308E5175827A00003CC1C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		67538DC71B65E031006D0AFB /* HandyPOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HandyPOS.entitlements; sourceTree = "<group>"; };
 		67563F311B4B7AD000DEA4A6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		67563F321B4B7AD000DEA4A6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -99,6 +98,8 @@
 		676F91C91B56570700DA5183 /* Tenpo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tenpo.m; sourceTree = "<group>"; };
 		6776FBD11B4FA2FD002557FE /* TransferData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferData.h; sourceTree = "<group>"; };
 		6776FBD21B4FA2FE002557FE /* TransferData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferData.m; sourceTree = "<group>"; };
+		6783F44A1B819EC4004F8DDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HandyPOS/Images.xcassets; sourceTree = "<group>"; };
+		6783F44C1B819F4D004F8DDD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		679F5567168BD58200AD40FF /* DataMente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMente.h; sourceTree = "<group>"; };
 		679F5568168BD58200AD40FF /* DataMente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMente.m; sourceTree = "<group>"; };
 		679F556D168BE38A00AD40FF /* UriageSettei.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UriageSettei.h; sourceTree = "<group>"; };
@@ -144,7 +145,6 @@
 		67BFE54C1679AFF30016B398 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		67C0E9981642165200016E70 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = picture/button.png; sourceTree = SOURCE_ROOT; };
 		67C0E99A16421BFC00016E70 /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button2.png; path = picture/button2.png; sourceTree = SOURCE_ROOT; };
-		67C131AA168AB88700B580D9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		67C1888C15E219BD00E33452 /* DataUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUpdate.h; sourceTree = "<group>"; };
 		67C1888D15E219BD00E33452 /* DataUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUpdate.m; sourceTree = "<group>"; };
 		67C2E9BB1B4A509700A3B898 /* Seisan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seisan.h; sourceTree = "<group>"; };
@@ -279,6 +279,7 @@
 				674ADC331B5C8C390006A23C /* Printer.m */,
 			);
 			name = Print;
+			path = Printer;
 			sourceTree = "<group>";
 		};
 		679F556B168BE35500AD40FF /* モード選択 */ = {
@@ -420,7 +421,7 @@
 				676F91C81B56570700DA5183 /* Tenpo.h */,
 				676F91C91B56570700DA5183 /* Tenpo.m */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		67CBE7F11675E44C00E5D065 /* コントロールメンテ */ = {
@@ -437,18 +438,13 @@
 		67D17B6215AE7522001ED592 = {
 			isa = PBXGroup;
 			children = (
+				6783F44A1B819EC4004F8DDD /* Images.xcassets */,
 				67538DC71B65E031006D0AFB /* HandyPOS.entitlements */,
 				674ADC311B5C8C050006A23C /* Print */,
-				674ADC2F1B5C894E0006A23C /* ExternalAccessory.framework */,
 				674ADC261B5C89250006A23C /* usr */,
 				674ADC1B1B5C89010006A23C /* PrinterLibrary */,
 				67E96AFE1B4E287B0026D080 /* Connection */,
 				67C2E9BA1B4A507F00A3B898 /* Models */,
-				675308E5175827A00003CC1C /* Default-568h@2x.png */,
-				67C131AA168AB88700B580D9 /* Default.png */,
-				67BFE54C1679AFF30016B398 /* CFNetwork.framework */,
-				67334E8116144E3200A58302 /* MessageUI.framework */,
-				67D17B8E15AE7541001ED592 /* libsqlite3.0.dylib */,
 				67D17B9015AE754F001ED592 /* FMDB */,
 				67D17B7715AE7522001ED592 /* MAIN */,
 				67D17B7015AE7522001ED592 /* Frameworks */,
@@ -469,6 +465,10 @@
 		67D17B7015AE7522001ED592 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67BFE54C1679AFF30016B398 /* CFNetwork.framework */,
+				67334E8116144E3200A58302 /* MessageUI.framework */,
+				67D17B8E15AE7541001ED592 /* libsqlite3.0.dylib */,
+				674ADC2F1B5C894E0006A23C /* ExternalAccessory.framework */,
 				67B4263B15CF9CFC00EFEAA1 /* AudioToolbox.framework */,
 				67D17B7115AE7522001ED592 /* UIKit.framework */,
 				67D17B7315AE7522001ED592 /* Foundation.framework */,
@@ -496,7 +496,7 @@
 				67D17B7815AE7522001ED592 /* Supporting Files */,
 			);
 			name = MAIN;
-			path = photo;
+			path = main;
 			sourceTree = "<group>";
 		};
 		67D17B7815AE7522001ED592 /* Supporting Files */ = {
@@ -547,6 +547,7 @@
 		67E3D54815E494A600506F9E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6783F44C1B819F4D004F8DDD /* Default-568h@2x.png */,
 				674ADC391B5CE4DD0006A23C /* ReceiptComment.txt */,
 				67D1AB1E17A282CE00D67060 /* button02.gif */,
 				67D1AB1A17A2829300D67060 /* button01.gif */,
@@ -573,7 +574,7 @@
 				67E96AFF1B4E28B30026D080 /* ConnectionManager.h */,
 				67E96B001B4E28B30026D080 /* ConnectionManager.m */,
 			);
-			name = Connection;
+			path = Connection;
 			sourceTree = "<group>";
 		};
 		D71CEB637B1298DF373B9A86 /* Pods */ = {
@@ -645,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67B4263F15CF9DB500EFEAA1 /* Beep.wav in Resources */,
+				6783F44B1B819EC4004F8DDD /* Images.xcassets in Resources */,
 				67B4264015CF9DB500EFEAA1 /* butin.wav in Resources */,
 				67C0E9991642165200016E70 /* button.png in Resources */,
 				67C0E99B16421BFC00016E70 /* button2.png in Resources */,
@@ -653,10 +655,9 @@
 				67BCBDBA165F0FDC00715C5D /* logo.png in Resources */,
 				67B40201167ADC3100A533AF /* NoImage.png in Resources */,
 				67C131A9168AB87E00B580D9 /* Icon.png in Resources */,
-				67C131AB168AB88700B580D9 /* Default.png in Resources */,
 				679F557F168C1ED400AD40FF /* button_L.png in Resources */,
 				679F5580168C1ED400AD40FF /* button_R.png in Resources */,
-				675308E6175827A00003CC1C /* Default-568h@2x.png in Resources */,
+				6783F44E1B819F4D004F8DDD /* Default-568h@2x.png in Resources */,
 				67D1AB1017A2677700D67060 /* button1.gif in Resources */,
 				67D1AB1917A26B9C00D67060 /* back.bmp in Resources */,
 				67D1AB1C17A2829300D67060 /* button01.gif in Resources */,
@@ -854,6 +855,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49491D19AA4DAC191E9223C /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = HandyPOS.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "";
@@ -865,8 +868,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "photo/HandyPOS-Prefix.pch";
-				INFOPLIST_FILE = "photo/HandyPOS-Info.plist";
+				GCC_PREFIX_HEADER = "main/HandyPOS-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/main/HandyPOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -888,6 +891,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC391235FED771959306B3BB /* Pods.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = HandyPOS.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -898,8 +903,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "photo/HandyPOS-Prefix.pch";
-				INFOPLIST_FILE = "photo/HandyPOS-Info.plist";
+				GCC_PREFIX_HEADER = "main/HandyPOS-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/main/HandyPOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

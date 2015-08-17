@@ -63,10 +63,10 @@
 
 +(NSMutableArray *)selectID:(NSMutableArray *)array selectFlag:(NSString *)Flag;
 +(NSMutableArray *)selectReno:(NSMutableArray *)array;
-+(NSMutableArray *)selectBumonID:(NSMutableArray *)array selectFlag:(NSString *)Flag;
+//+(NSMutableArray *)selectBumonID:(NSMutableArray *)array selectFlag:(NSString *)Flag;
 +(NSMutableArray *)selectNebiki:(NSMutableArray *)array;
 +(NSMutableArray *)selectGenka:(NSMutableArray *)array;
-+(NSMutableArray *)select:(NSMutableArray *)array selectBumon:(NSString *)Bumon selectFlag:(NSString *)Flag;
+//+(NSMutableArray *)select:(NSMutableArray *)array selectBumon:(NSString *)Bumon selectFlag:(NSString *)Flag;
 +(NSMutableArray *)selectTenpo:(NSMutableArray *)array where_id:(NSString *)idno;
 +(void)selectID:(NSString *)idno updateKosu:(NSString *)Kosu selectFlag:(NSString *)Flag;
 +(void)drop_table:(NSString *)Flag;

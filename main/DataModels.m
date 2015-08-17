@@ -409,6 +409,7 @@
     return array;
 }
 
+/*
 +(NSMutableArray *)selectBumonID:(NSMutableArray *)array selectFlag:(NSString *)Flag{
 
     FMDatabase *db;
@@ -437,6 +438,7 @@
     [db close];
     return array;
 }
+ */
 
 
 //原価呼び出し
@@ -458,6 +460,7 @@
 }
 
 //部門管理時の呼び出し
+/*
 +(NSMutableArray *)select:(NSMutableArray *)array selectBumon:(NSString *)Bumon selectFlag:(NSString *)Flag{
     
     FMDatabase *db = [DataModels getMasterDB];
@@ -495,6 +498,7 @@
     [db close];
     return array;
 }
+ */
 
 +(NSMutableArray *)selectTenpo:(NSMutableArray *)array where_id:(NSString *)idno{
 
