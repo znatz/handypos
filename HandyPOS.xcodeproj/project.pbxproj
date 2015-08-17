@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		5B0B07A4D7BD16BF2190BA95 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E343F96F5B545CFDFCD06B /* libPods.a */; };
 		67136D1D1B4B5803003BD414 /* Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = 67136D1C1B4B5803003BD414 /* Goods.m */; };
-		674ADC2E1B5C89370006A23C /* libPrinter_160.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 674ADC1C1B5C89010006A23C /* libPrinter_160.a */; };
+		671DD9E11B81CE79007A41CE /* libPrinter_160.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 671DD9E01B81CE79007A41CE /* libPrinter_160.a */; };
+		671DD9E51B81CF9B007A41CE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 671DD9E41B81CF9B007A41CE /* libsqlite3.0.tbd */; };
 		674ADC301B5C894E0006A23C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674ADC2F1B5C894E0006A23C /* ExternalAccessory.framework */; };
 		674ADC341B5C8C390006A23C /* Printer.m in Sources */ = {isa = PBXBuildFile; fileRef = 674ADC331B5C8C390006A23C /* Printer.m */; };
 		674ADC3A1B5CE4DD0006A23C /* ReceiptComment.txt in Resources */ = {isa = PBXBuildFile; fileRef = 674ADC391B5CE4DD0006A23C /* ReceiptComment.txt */; };
@@ -59,7 +60,6 @@
 		67D17B7615AE7522001ED592 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D17B7515AE7522001ED592 /* CoreGraphics.framework */; };
 		67D17B7E15AE7522001ED592 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D17B7D15AE7522001ED592 /* main.m */; };
 		67D17B8215AE7522001ED592 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D17B8115AE7522001ED592 /* AppDelegate.m */; };
-		67D17B8F15AE7541001ED592 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D17B8E15AE7541001ED592 /* libsqlite3.0.dylib */; };
 		67D17BAC15AE7637001ED592 /* DataModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D17BAB15AE7637001ED592 /* DataModels.m */; };
 		67D1AB1017A2677700D67060 /* button1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 67D1AB0C17A2677700D67060 /* button1.gif */; };
 		67D1AB1917A26B9C00D67060 /* back.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 67D1AB1817A26B9C00D67060 /* back.bmp */; };
@@ -73,17 +73,18 @@
 /* Begin PBXFileReference section */
 		67136D1B1B4B5803003BD414 /* Goods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goods.h; sourceTree = "<group>"; };
 		67136D1C1B4B5803003BD414 /* Goods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goods.m; sourceTree = "<group>"; };
+		671DD9E01B81CE79007A41CE /* libPrinter_160.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPrinter_160.a; path = Printer/libPrinter_160.a; sourceTree = "<group>"; };
+		671DD9E21B81CE9A007A41CE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		671DD9E41B81CF9B007A41CE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		67334E8116144E3200A58302 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		674ADC1C1B5C89010006A23C /* libPrinter_160.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPrinter_160.a; sourceTree = "<group>"; };
 		674ADC201B5C89010006A23C /* CallbackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallbackData.h; sourceTree = "<group>"; };
 		674ADC221B5C89010006A23C /* EABluetoothPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EABluetoothPort.h; sourceTree = "<group>"; };
 		674ADC231B5C89010006A23C /* ESCPOSPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESCPOSPrinter.h; sourceTree = "<group>"; };
 		674ADC241B5C89010006A23C /* POSPrinterFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSPrinterFinder.h; sourceTree = "<group>"; };
-		674ADC291B5C89250006A23C /* CallbackData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallbackData.h; sourceTree = "<group>"; };
-		674ADC2A1B5C89250006A23C /* CPCLPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPCLPrinter.h; sourceTree = "<group>"; };
-		674ADC2B1B5C89250006A23C /* EABluetoothPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EABluetoothPort.h; sourceTree = "<group>"; };
-		674ADC2C1B5C89250006A23C /* ESCPOSPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESCPOSPrinter.h; sourceTree = "<group>"; };
-		674ADC2D1B5C89250006A23C /* POSPrinterFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POSPrinterFinder.h; sourceTree = "<group>"; };
+		674ADC291B5C89250006A23C /* CallbackData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CallbackData.h; path = Printer/CallbackData.h; sourceTree = SOURCE_ROOT; };
+		674ADC2C1B5C89250006A23C /* ESCPOSPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ESCPOSPrinter.h; path = Printer/ESCPOSPrinter.h; sourceTree = SOURCE_ROOT; };
+		674ADC2D1B5C89250006A23C /* POSPrinterFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = POSPrinterFinder.h; path = Printer/POSPrinterFinder.h; sourceTree = SOURCE_ROOT; };
 		674ADC2F1B5C894E0006A23C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		674ADC321B5C8C390006A23C /* Printer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Printer.h; sourceTree = "<group>"; };
 		674ADC331B5C8C390006A23C /* Printer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Printer.m; sourceTree = "<group>"; };
@@ -168,7 +169,6 @@
 		67D17B7F15AE7522001ED592 /* HandyPOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HandyPOS-Prefix.pch"; sourceTree = "<group>"; };
 		67D17B8015AE7522001ED592 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67D17B8115AE7522001ED592 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		67D17B8E15AE7541001ED592 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		67D17BAA15AE7637001ED592 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
 		67D17BAB15AE7637001ED592 /* DataModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModels.m; sourceTree = "<group>"; };
 		67D1AB0C17A2677700D67060 /* button1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = button1.gif; path = picture/button1.gif; sourceTree = SOURCE_ROOT; };
@@ -190,11 +190,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				671DD9E51B81CF9B007A41CE /* libsqlite3.0.tbd in Frameworks */,
+				671DD9E11B81CE79007A41CE /* libPrinter_160.a in Frameworks */,
 				674ADC301B5C894E0006A23C /* ExternalAccessory.framework in Frameworks */,
-				674ADC2E1B5C89370006A23C /* libPrinter_160.a in Frameworks */,
 				67BFE54D1679AFF30016B398 /* CFNetwork.framework in Frameworks */,
 				67B4263C15CF9CFC00EFEAA1 /* AudioToolbox.framework in Frameworks */,
-				67D17B8F15AE7541001ED592 /* libsqlite3.0.dylib in Frameworks */,
 				67D17B7215AE7522001ED592 /* UIKit.framework in Frameworks */,
 				67D17B7415AE7522001ED592 /* Foundation.framework in Frameworks */,
 				67D17B7615AE7522001ED592 /* CoreGraphics.framework in Frameworks */,
@@ -241,38 +241,12 @@
 			path = include;
 			sourceTree = "<group>";
 		};
-		674ADC261B5C89250006A23C /* usr */ = {
-			isa = PBXGroup;
-			children = (
-				674ADC271B5C89250006A23C /* local */,
-			);
-			name = usr;
-			path = PrinterLibrary/usr;
-			sourceTree = "<group>";
-		};
-		674ADC271B5C89250006A23C /* local */ = {
-			isa = PBXGroup;
-			children = (
-				674ADC281B5C89250006A23C /* include */,
-			);
-			path = local;
-			sourceTree = "<group>";
-		};
-		674ADC281B5C89250006A23C /* include */ = {
-			isa = PBXGroup;
-			children = (
-				674ADC291B5C89250006A23C /* CallbackData.h */,
-				674ADC2A1B5C89250006A23C /* CPCLPrinter.h */,
-				674ADC2B1B5C89250006A23C /* EABluetoothPort.h */,
-				674ADC2C1B5C89250006A23C /* ESCPOSPrinter.h */,
-				674ADC2D1B5C89250006A23C /* POSPrinterFinder.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
 		674ADC311B5C8C050006A23C /* Print */ = {
 			isa = PBXGroup;
 			children = (
+				674ADC291B5C89250006A23C /* CallbackData.h */,
+				674ADC2C1B5C89250006A23C /* ESCPOSPrinter.h */,
+				674ADC2D1B5C89250006A23C /* POSPrinterFinder.h */,
 				674ADC321B5C8C390006A23C /* Printer.h */,
 				674ADC331B5C8C390006A23C /* Printer.m */,
 			);
@@ -439,7 +413,6 @@
 				6783F44A1B819EC4004F8DDD /* Images.xcassets */,
 				67538DC71B65E031006D0AFB /* HandyPOS.entitlements */,
 				674ADC311B5C8C050006A23C /* Print */,
-				674ADC261B5C89250006A23C /* usr */,
 				674ADC1B1B5C89010006A23C /* PrinterLibrary */,
 				67E96AFE1B4E287B0026D080 /* Connection */,
 				67C2E9BA1B4A507F00A3B898 /* Models */,
@@ -463,9 +436,11 @@
 		67D17B7015AE7522001ED592 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				671DD9E41B81CF9B007A41CE /* libsqlite3.0.tbd */,
+				671DD9E21B81CE9A007A41CE /* libsqlite3.tbd */,
+				671DD9E01B81CE79007A41CE /* libPrinter_160.a */,
 				67BFE54C1679AFF30016B398 /* CFNetwork.framework */,
 				67334E8116144E3200A58302 /* MessageUI.framework */,
-				67D17B8E15AE7541001ED592 /* libsqlite3.0.dylib */,
 				674ADC2F1B5C894E0006A23C /* ExternalAccessory.framework */,
 				67B4263B15CF9CFC00EFEAA1 /* AudioToolbox.framework */,
 				67D17B7115AE7522001ED592 /* UIKit.framework */,
@@ -873,6 +848,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Printer\"",
 					"\"$(SRCROOT)/PrinterLibrary\"",
+					"$(PROJECT_DIR)/Printer",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "POSCO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = HandyPOS;
@@ -908,6 +884,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Printer\"",
 					"\"$(SRCROOT)/PrinterLibrary\"",
+					"$(PROJECT_DIR)/Printer",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "POSCO.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = HandyPOS;
