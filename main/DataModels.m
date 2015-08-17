@@ -409,38 +409,6 @@
     return array;
 }
 
-/*
-+(NSMutableArray *)selectBumonID:(NSMutableArray *)array selectFlag:(NSString *)Flag{
-
-    FMDatabase *db;
-
-    if([Flag isEqual:@"4"]){
-        db=[DataModels getBurDataDB];
-    }
-    else if([Flag isEqual:@"8"]){
-        db=[DataModels getMasterDB];
-    }
-    [db open];
-    FMResultSet *results;
-    if([Flag isEqual:@"4"]){
-        results=[db executeQuery:ALL_Seisan];
-    }
-    NSString *idData;
-    while ([results next]) {
-        if([Flag isEqual:@"4"]){
-            idData=[results stringForColumn:@"bumon"];
-        }
-        else if([Flag isEqual:@"8"]){
-            idData=[results stringForColumn:@"id"];
-        }
-        [array addObject:idData];
-    }
-    [db close];
-    return array;
-}
- */
-
-
 //原価呼び出し
 +(NSMutableArray *)selectGenka:(NSMutableArray *)array{
 
@@ -459,46 +427,6 @@
     
 }
 
-//部門管理時の呼び出し
-/*
-+(NSMutableArray *)select:(NSMutableArray *)array selectBumon:(NSString *)Bumon selectFlag:(NSString *)Flag{
-    
-    FMDatabase *db = [DataModels getMasterDB];
-    [db open];
-    
-    FMResultSet *results;
-    results=[db executeQuery:ALL_BTSMAS_BY_Bumon,Bumon];
-    
-    NSString *nameData;
-    NSData *contentsData;
-    if([Flag isEqual:@"4"]){
-        while ([results next]) {
-            contentsData=[results dataForColumn:@"contents"];
-            if([contentsData length]==0){
-                UIImage *image=[UIImage imageNamed:@"NoImage.png"];
-                contentsData=[[NSData alloc]initWithData:UIImagePNGRepresentation(image)];
-            }
-            [array addObject:contentsData];
-        }
-    }
-    else{
-        while ([results next]) {
-            if([Flag isEqual:@"1"]){
-                nameData=[results stringForColumn:@"id"];
-            }
-            else if([Flag isEqual:@"2"]){
-                nameData=[results stringForColumn:@"title"];
-            }
-            else if([Flag isEqual:@"3"]){
-                nameData=[results stringForColumn:@"price"];
-            }
-            [array addObject:nameData];
-        }
-    }
-    [db close];
-    return array;
-}
- */
 
 +(NSMutableArray *)selectTenpo:(NSMutableArray *)array where_id:(NSString *)idno{
 

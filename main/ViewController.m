@@ -249,11 +249,9 @@
     
     [DataModels delete_table:strID];
     
-    pricetag= [NSString stringWithFormat:@"%d",deleteTarget.price];
-    int l = [pricetag length];
-    for(int i=0; i<5-l; i++){
-        pricetag=[NSString stringWithFormat:@"  %@",pricetag];
-    }
+    pricetag    = [NSString stringWithFormat:@"%d",deleteTarget.price];
+    pricetag    = [pricetag rightJustify:5 with:@" "];
+    
     NSString *price=[NSString stringWithFormat:@"%@円       ",pricetag];
     if([self.settings.picmode intValue]==0)price=[NSString stringWithFormat:@"       %@",price];
     cell.detailTextLabel.text=price;

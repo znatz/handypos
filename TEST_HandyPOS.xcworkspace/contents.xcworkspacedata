@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:TEST_HandyPOS.xcodeproj">
+      location = "group:/Users/posco/Desktop/Workspace/z/cyou/HandyPOS.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

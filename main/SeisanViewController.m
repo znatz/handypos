@@ -21,6 +21,7 @@
 #import "ConnectionManager.h"
 #import "TransferData.h"
 #import "Printer.h"
+#import "NSString+Ruby.h"
 
 
 //#import "MiniPrinterFunctions.h"
@@ -394,10 +395,7 @@
     
     //レシートNoの増加
     Re_no=[NSString stringWithFormat:@"%d",[Re_no intValue]+1];
-    intLength=[Re_no length];
-    for(int i=0; i<6-intLength; i++){
-        Re_no=[NSString stringWithFormat:@"0%@",Re_no];
-    }
+    Re_no = [Re_no rightJustify:6 with:@" "];
 
     self.shopsettings.receipt = Re_no;
     [DataMente updateShopSettings:self.shopsettings];

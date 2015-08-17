@@ -11,12 +11,12 @@
 #import "DataModels.h"
 #import "ShopSettings.h"
 #import "Tenpo.h"
+#import "NSString+Ruby.h"
 
 @interface TenpoSettei ()
 @property ShopSettings * shopsettings;
 @property NSMutableArray * allTenpo;
 @property int currentTenpo;
-- (NSString *) paddingReceiptNo : (NSString *) r ;
 @end
 
 @implementation TenpoSettei{
@@ -81,7 +81,7 @@
     }
     
     
-    lblReceiptNo.text= [self paddingReceiptNo:self.shopsettings.receipt];
+    lblReceiptNo.text = [_shopsettings.receipt rightJustify:6 with:@"0"];
 }
 
 //店舗No
@@ -139,7 +139,7 @@
         rt -- ;
         self.shopsettings.receipt = [NSString stringWithFormat:@"%d", rt];
     }
-    lblReceiptNo.text = [self paddingReceiptNo:self.shopsettings.receipt];
+    lblReceiptNo.text = [_shopsettings.receipt rightJustify:6 with:@"0"];
 }
 -(IBAction)btnReceiptNo2:(id)sender{
     int rt = [self.shopsettings.receipt intValue];
@@ -147,7 +147,7 @@
         rt ++ ;
         self.shopsettings.receipt = [NSString stringWithFormat:@"%d", rt];
     }
-    lblReceiptNo.text = [self paddingReceiptNo:self.shopsettings.receipt];
+    lblReceiptNo.text = [_shopsettings.receipt rightJustify:6 with:@"0"];
 }
 
 //変更の保存
@@ -166,16 +166,4 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
-- (NSString *) paddingReceiptNo : (NSString *) r {
-
-    NSString * padded = [NSString stringWithString:r];
-    int l = [padded length];
-
-    for(int i=0; i<6-l; i++){
-        padded=[NSString stringWithFormat:@"0%@",padded];
-    }
-    return padded;
-}
-
 @end

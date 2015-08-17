@@ -17,7 +17,7 @@
                BlueprintIdentifier = "67D17B6C15AE7522001ED592"
                BuildableName = "HandyPOS.app"
                BlueprintName = "HandyPOS"
-               ReferencedContainer = "container:TEST_HandyPOS.xcodeproj">
+               ReferencedContainer = "container:HandyPOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "67D17B6C15AE7522001ED592"
             BuildableName = "HandyPOS.app"
             BlueprintName = "HandyPOS"
-            ReferencedContainer = "container:TEST_HandyPOS.xcodeproj">
+            ReferencedContainer = "container:HandyPOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -60,7 +60,7 @@
             BlueprintIdentifier = "67D17B6C15AE7522001ED592"
             BuildableName = "HandyPOS.app"
             BlueprintName = "HandyPOS"
-            ReferencedContainer = "container:TEST_HandyPOS.xcodeproj">
+            ReferencedContainer = "container:HandyPOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -85,7 +85,7 @@
             BlueprintIdentifier = "67D17B6C15AE7522001ED592"
             BuildableName = "HandyPOS.app"
             BlueprintName = "HandyPOS"
-            ReferencedContainer = "container:TEST_HandyPOS.xcodeproj">
+            ReferencedContainer = "container:HandyPOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

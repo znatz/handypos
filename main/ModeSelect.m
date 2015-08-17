@@ -171,16 +171,16 @@
     
     switch (indexPath.section) {
         case 0:
-            self.settings.azmode = [NSString stringWithFormat:@"%d", indexPath.row];
+            self.settings.azmode = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
             break;
         case 1:
-            self.settings.bumode = [NSString stringWithFormat:@"%d", indexPath.row];
+            self.settings.bumode = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
             break;
         case 2:
-            self.settings.picmode = [NSString stringWithFormat:@"%d", indexPath.row];
+            self.settings.picmode = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
             break;
         case 3:
-            self.settings.nimode = [NSString stringWithFormat:@"%d", indexPath.row];
+            self.settings.nimode = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
             break;
             
         default:

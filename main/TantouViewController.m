@@ -18,9 +18,8 @@
 #import "ShopSettings.h"
 #import "DataMente.h"
 
-@interface TantouViewController (){
-    
-
+@interface TantouViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
+{
     NSMutableArray * tantos;
     Tanto * defaultTanto;
     NSString * selectedTable;
@@ -32,6 +31,7 @@
     SystemSoundID soundID;
 }
 @property     Settings * settings;
+@property (weak, nonatomic) IBOutlet UIPickerView *pic;
 @end
 
 
@@ -67,12 +67,9 @@
     UIImage *imgback=[UIImage imageNamed:@"back.bmp"];
     self.view.backgroundColor=[UIColor colorWithPatternImage:imgback];
     
-    UIPickerView *pic=[[UIPickerView alloc]init];
-    pic.frame = CGRectMake(10.0, [self.view frame].size.height/4, [self.view frame].size.width-20.0, [self.view frame].size.height/2);
-    pic.delegate=self;
-    pic.dataSource=self;
-    pic.showsSelectionIndicator=YES;
-    [self.view addSubview:pic];
+    self.pic.delegate       =self;
+    self.pic.dataSource     =self;
+    self.pic.showsSelectionIndicator=YES;
     
     
     
@@ -92,9 +89,7 @@
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)url,&soundID);
 }
 
--(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
-    return 2;
-}
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView { return 2; }
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
     if(component == 0) return tantos.count;
@@ -107,7 +102,7 @@
         Tanto * t = tantos[row];
         return [NSString stringWithFormat:@"%@",t._name];
     } else {
-        return [NSString stringWithFormat:@"%d", row];
+        return [NSString stringWithFormat:@"卓番%ld", (long)row];
     }
     
 }
@@ -117,7 +112,7 @@
         defaultTanto = tantos[row];
         name.text = defaultTanto._name;
     } else {
-        self.tableNO.text = [NSString stringWithFormat:@"%d", row];
+        self.tableNO.text = [NSString stringWithFormat:@"%ld", (long)row];
         selectedTable = self.tableNO.text;
         
     }
