@@ -73,7 +73,7 @@
             }
             
             double percentDone = (double)totalBytesRead / (double)totalBytesExpectedToRead ;
-            DALabeledCircularProgressView * progressbar = [[DALabeledCircularProgressView alloc] initWithFrame:CGRectMake([parentView view].frame.size.width/5, [parentView view].frame.size.height/5, 200.0f, 200.0f)];
+            DALabeledCircularProgressView * progressbar = [[DALabeledCircularProgressView alloc] initWithFrame:CGRectMake([parentView view].frame.size.width/5, [parentView view].frame.size.height/5, [parentView view].frame.size.width*3/5, [parentView view].frame.size.width*3/5)];
             
             progressbar.roundedCorners = YES;
             progressbar.trackTintColor = [UIColor brownColor];

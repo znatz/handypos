@@ -79,11 +79,6 @@
 		671DD9E71B81D9B2007A41CE /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Utils.h"; path = "Helpers/UIViewController+Utils.h"; sourceTree = "<group>"; };
 		671DD9E81B81D9B2007A41CE /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Utils.m"; path = "Helpers/UIViewController+Utils.m"; sourceTree = "<group>"; };
 		67334E8116144E3200A58302 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		674ADC1C1B5C89010006A23C /* libPrinter_160.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPrinter_160.a; sourceTree = "<group>"; };
-		674ADC201B5C89010006A23C /* CallbackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallbackData.h; sourceTree = "<group>"; };
-		674ADC221B5C89010006A23C /* EABluetoothPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EABluetoothPort.h; sourceTree = "<group>"; };
-		674ADC231B5C89010006A23C /* ESCPOSPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESCPOSPrinter.h; sourceTree = "<group>"; };
-		674ADC241B5C89010006A23C /* POSPrinterFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSPrinterFinder.h; sourceTree = "<group>"; };
 		674ADC291B5C89250006A23C /* CallbackData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CallbackData.h; path = Printer/CallbackData.h; sourceTree = SOURCE_ROOT; };
 		674ADC2C1B5C89250006A23C /* ESCPOSPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ESCPOSPrinter.h; path = Printer/ESCPOSPrinter.h; sourceTree = SOURCE_ROOT; };
 		674ADC2D1B5C89250006A23C /* POSPrinterFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = POSPrinterFinder.h; path = Printer/POSPrinterFinder.h; sourceTree = SOURCE_ROOT; };
@@ -214,42 +209,6 @@
 				671DD9E81B81D9B2007A41CE /* UIViewController+Utils.m */,
 			);
 			name = Helpers;
-			sourceTree = "<group>";
-		};
-		674ADC1B1B5C89010006A23C /* PrinterLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				674ADC1C1B5C89010006A23C /* libPrinter_160.a */,
-				674ADC1D1B5C89010006A23C /* usr */,
-			);
-			path = PrinterLibrary;
-			sourceTree = "<group>";
-		};
-		674ADC1D1B5C89010006A23C /* usr */ = {
-			isa = PBXGroup;
-			children = (
-				674ADC1E1B5C89010006A23C /* local */,
-			);
-			path = usr;
-			sourceTree = "<group>";
-		};
-		674ADC1E1B5C89010006A23C /* local */ = {
-			isa = PBXGroup;
-			children = (
-				674ADC1F1B5C89010006A23C /* include */,
-			);
-			path = local;
-			sourceTree = "<group>";
-		};
-		674ADC1F1B5C89010006A23C /* include */ = {
-			isa = PBXGroup;
-			children = (
-				674ADC201B5C89010006A23C /* CallbackData.h */,
-				674ADC221B5C89010006A23C /* EABluetoothPort.h */,
-				674ADC231B5C89010006A23C /* ESCPOSPrinter.h */,
-				674ADC241B5C89010006A23C /* POSPrinterFinder.h */,
-			);
-			path = include;
 			sourceTree = "<group>";
 		};
 		674ADC311B5C8C050006A23C /* Print */ = {
@@ -425,7 +384,6 @@
 				6783F44A1B819EC4004F8DDD /* Images.xcassets */,
 				67538DC71B65E031006D0AFB /* HandyPOS.entitlements */,
 				674ADC311B5C8C050006A23C /* Print */,
-				674ADC1B1B5C89010006A23C /* PrinterLibrary */,
 				67E96AFE1B4E287B0026D080 /* Connection */,
 				67C2E9BA1B4A507F00A3B898 /* Models */,
 				67D17B9015AE754F001ED592 /* FMDB */,
