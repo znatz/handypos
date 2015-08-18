@@ -11,42 +11,73 @@
 #import "UIViewController+Utils.h"
 #import "AFNetworking.h"
 #import <AFNetworking/AFNetworking.h>
+#import <AFNetworkActivityIndicatorManager.h>
+#import <AFNetworking/UIActivityIndicatorView+AFNetworking.h>
+#import <DACircularProgress/DACircularProgressView.h>
+#import <DACircularProgress/DALabeledCircularProgressView.h>
 
 @implementation ConnectionManager
 
-+ (void) fetchDBFile1 : (NSString *)dbfileName fromViewController : (UIViewController*) parentView
++ (void) fetchDBFile : (NSString *)dbfileName fromViewController : (UIViewController*) parentView
 {
+    UIView * dimview = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, parentView.view.frame.size.width, parentView.view.frame.size.height)];
+    [dimview setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.5f]];
+    dimview.tag = 10;
+    [[parentView view] addSubview:dimview];
+    
     NSString * dbURI = @"http://posco-cloud.sakura.ne.jp/TEST/IOS/OrderSystem/app/database";
 
     NSString *url    = [NSString stringWithFormat:@"%@/%@", dbURI, dbfileName];
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
+    
     // ダウンロード先のURLを設定したNSURLRequestインスタンスを生成する
-//    NSMutableURLRequest *request = [manager.requestSerializer requestWithMethod:@"GET" URLString:url parameters:nil];
     NSError * error;
     NSMutableURLRequest *request = [[manager requestSerializer] requestWithMethod:@"GET" URLString:url parameters:nil error:&error];
     
     // ダウンロード処理を実行するためのAFHTTPRequestOperationインスタンスを生成する
     AFHTTPRequestOperation *operation = [manager HTTPRequestOperationWithRequest:request
                                                                          success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                                                             // ダウンロードに成功したらコンソールに成功した旨を表示する
-                                                                             NSLog(@"ダウンロード完了！");
+//                                                                             NSLog(@"ダウンロード完了！");
                                                                          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                                                             // エラーの場合はエラーの内容をコンソールに出力する
                                                                              NSLog(@"Error: %@", error);
                                                                          }];
     
     
+    
     // データを受信する度に実行される処理を設定する
     [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
+        
         // ダウンロード中の進捗状況をコンソールに表示する
-        NSLog(@"bytesRead: %@, totalBytesRead: %@, totalBytesExpectedToRead: %@, progress: %@",
-              @(bytesRead),
-              @(totalBytesRead),
-              @(totalBytesRead),
-              @((float)totalBytesRead / totalBytesExpectedToRead));
+        for (UIView * v in [parentView view].subviews) {
+            if ([v isKindOfClass:[DALabeledCircularProgressView class]]) {
+                [v removeFromSuperview];
+            }
+        }
+        
+        double percentDone = (double)totalBytesRead / (double)totalBytesExpectedToRead ;
+        DALabeledCircularProgressView * progressbar = [[DALabeledCircularProgressView alloc] initWithFrame:CGRectMake([parentView view].frame.size.width/5, [parentView view].frame.size.height/5, 200.0f, 200.0f)];
+        
+        progressbar.roundedCorners = YES;
+        progressbar.trackTintColor = [UIColor brownColor];
+        progressbar.progressTintColor = [UIColor whiteColor];
+        progressbar.progress = percentDone;
+        progressbar.thicknessRatio = 0.1f;
+        progressbar.progressLabel.text = [NSString stringWithFormat:@"%d％", (int)round(percentDone * 100) ];
+
+        if (percentDone < 1) [[parentView view] addSubview:progressbar];
+        if (percentDone == 1) {
+            for (UIView * v in parentView.view.subviews) {
+                if (v.tag == 10) {
+                    [v removeFromSuperview];
+                }
+            }
+        };
     }];
+    
+    
+    
     
     // <Application_Home>/Documentsディレクトリのパスを取得する
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -65,63 +96,25 @@
     
     // ダウンロードを開始する
     [manager.operationQueue addOperation:operation];
-}
-
-
-+ (void) fetchDBFile : (NSString *)dbfileName fromViewController : (UIViewController*) parentView
-{
-    NSString * dbURI = @"http://posco-cloud.sakura.ne.jp/TEST/IOS/OrderSystem/app/database";
-
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", dbURI, dbfileName]];
-    NSLog(@"%@", url);
-    NSURLRequest *myRequest;
-    
-    myRequest = [NSURLRequest requestWithURL:url
-                                 cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
-                             timeoutInterval:30.0];
-    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:myRequest];
     
     
-    // sqliteの保存場所を指定
-    NSString *documentDir;
-    documentDir = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-    dbfileName = [NSString stringWithFormat:@"%@", dbfileName];
-    NSString *downloadDestinationPath = [documentDir stringByAppendingPathComponent:dbfileName];
-    operation.outputStream = [NSOutputStream outputStreamToFileAtPath:downloadDestinationPath append:NO];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
-    
-    [operation
-     setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation,
-                                     id responseObject)
-    {
-        NSLog(@"ダウンロード成功！ dbの保存先:%@", downloadDestinationPath);
-    }
-     failure:^(AFHTTPRequestOperation *operation,
-               NSError *error)
-    {
-        NSLog(@"Error ->: %@", [error localizedDescription]);
-    }];
-    
-//    UIProgressView * progressbar  = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
+    [operation waitUntilFinished];
+    /*
     UIProgressView * progressbar  = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
     progressbar.frame = CGRectMake(10, 100, 200, 10);
     [[parentView view] addSubview:progressbar];
-    
     [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
         double percentDone = (double)totalBytesRead / (double)totalBytesExpectedToRead;
-//        NSLog(@"progress updated(percentDone) : %f", percentDone);
         progressbar.progress = percentDone;
     }];
-    [operation start];
-    [operation waitUntilFinished];
-    progressbar.hidden = YES;
+     */
 }
 
 + (void) fetchAllDB : (UIViewController *) parentView {
-//    [self fetchDBFile:@"Master.sqlite" fromViewController : parentView];
-//    [self fetchDBFile:@"Azukari.sqlite" fromViewController : parentView];
-    [self fetchDBFile1:@"Master.sqlite" fromViewController : parentView];
-    [self fetchDBFile1:@"Azukari.sqlite" fromViewController : parentView];
+    [self fetchDBFile:@"Master.sqlite" fromViewController : parentView];
+    [self fetchDBFile:@"Azukari.sqlite" fromViewController : parentView];
 }
 
 

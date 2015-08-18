@@ -20,16 +20,19 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - DACircularProgress (2.3.1)
   - NSString+Ruby (1.1)
   - ObjectiveSugar (1.1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.1)
+  - DACircularProgress
   - NSString+Ruby (~> 1.1)
   - ObjectiveSugar
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   NSString+Ruby: e68b2d9408107888f3d82436b0d1cd24c66c4b5b
   ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
 

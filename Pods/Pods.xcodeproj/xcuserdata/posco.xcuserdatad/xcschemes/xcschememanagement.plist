@@ -8,49 +8,51 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
+		</dict>
+		<key>DACircularProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>NSString+Ruby.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>ObjectiveSugar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00230A740F9614984D635DB4FD1BD973</key>
+		<key>00F1E8B795F1DB82EEF4191FE6ACE5AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>638CA2E3229FE8C8648AD8199B2F87D9</key>
+		<key>733537EE3979C21524616C2FE576893E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C67F4469F103A6F2AA39592223797996</key>
+		<key>75159C86539764FDC943E7F86B539557</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F097D802682609A87BD4669F5AB0D953</key>
+		<key>B345BFF7A4C3ADD6F6500CEB5727A355</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA26634226FEABBB3129D0792680E260</key>
 		<dict>
 			<key>primary</key>
 			<true/>

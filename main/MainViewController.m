@@ -134,41 +134,29 @@
     
     /* マスターデータ更新を選んだ　*/
     switch (buttonIndex) {
+        case 1:
+        {
+            [alertView dismissWithClickedButtonIndex:1 animated:NO];
+            
+            [NSThread detachNewThreadSelector:@selector(getDB:) toTarget:self withObject:nil];
+            break;
+        }
         case 0:
             break;
-        case 1:
-            
-            [ConnectionManager fetchAllDB : self];
-//            
-//            allSeisan = [DataUpdate getAllSeisan];
-//            
-//            NSMutableArray *idArry;
-//            for(int i=0; i<idArry.count; i++){
-//                
-//                Seisan * u = allSeisan[i];
-//                
-//                [DataUpdate saveToUriageWithTime:u._time
-//                                           re_no:u._re_no
-//                                              ID:u._ID
-//                                           title:u._title
-//                                           price:u._price
-//                                            kosu:u._kosu];
-//            }
-//            
-//            
-           
-//            allNebiki = [DataUpdate getAllNebiki];
-            
-            
-        UIAlertView *av =[[UIAlertView alloc] initWithTitle : @"完了"
-                                                    message : @"データ更新が完了しました。"
-                                                   delegate : self
-                                          cancelButtonTitle : nil
-                                          otherButtonTitles : @"OK", nil];
-        [av show];    
-            
-        break;
     }
+    
+}
+
+-(void)getDB:(id)sender {
+    [ConnectionManager fetchAllDB : self];
+    
+    UIAlertView *av =[[UIAlertView alloc] initWithTitle : @"完了"
+                                                message : @"データ更新が完了しました。"
+                                               delegate : self
+                                      cancelButtonTitle : nil
+                                      otherButtonTitles : @"OK", nil];
+    [av show];
+                
     
 }
 
