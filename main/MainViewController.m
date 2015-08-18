@@ -151,8 +151,8 @@
     [ConnectionManager fetchAllDB : self];
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIAlertView *av =[[UIAlertView alloc] initWithTitle : @"完了"
-                                                    message : @"データ更新が完了しました。"
+        UIAlertView *av =[[UIAlertView alloc] initWithTitle : @"データー更新しました\r\nレシート番号を設定してください"
+                                                    message : nil
                                                    delegate : self
                                           cancelButtonTitle : nil
                                           otherButtonTitles : @"OK", nil];
