@@ -11,6 +11,7 @@
 		67136D1D1B4B5803003BD414 /* Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = 67136D1C1B4B5803003BD414 /* Goods.m */; };
 		671DD9E11B81CE79007A41CE /* libPrinter_160.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 671DD9E01B81CE79007A41CE /* libPrinter_160.a */; };
 		671DD9E51B81CF9B007A41CE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 671DD9E41B81CF9B007A41CE /* libsqlite3.0.tbd */; };
+		671DD9E91B81D9B2007A41CE /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DD9E81B81D9B2007A41CE /* UIViewController+Utils.m */; };
 		674ADC301B5C894E0006A23C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674ADC2F1B5C894E0006A23C /* ExternalAccessory.framework */; };
 		674ADC341B5C8C390006A23C /* Printer.m in Sources */ = {isa = PBXBuildFile; fileRef = 674ADC331B5C8C390006A23C /* Printer.m */; };
 		674ADC3A1B5CE4DD0006A23C /* ReceiptComment.txt in Resources */ = {isa = PBXBuildFile; fileRef = 674ADC391B5CE4DD0006A23C /* ReceiptComment.txt */; };
@@ -74,8 +75,9 @@
 		67136D1B1B4B5803003BD414 /* Goods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goods.h; sourceTree = "<group>"; };
 		67136D1C1B4B5803003BD414 /* Goods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goods.m; sourceTree = "<group>"; };
 		671DD9E01B81CE79007A41CE /* libPrinter_160.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPrinter_160.a; path = Printer/libPrinter_160.a; sourceTree = "<group>"; };
-		671DD9E21B81CE9A007A41CE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		671DD9E41B81CF9B007A41CE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		671DD9E71B81D9B2007A41CE /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Utils.h"; path = "Helpers/UIViewController+Utils.h"; sourceTree = "<group>"; };
+		671DD9E81B81D9B2007A41CE /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Utils.m"; path = "Helpers/UIViewController+Utils.m"; sourceTree = "<group>"; };
 		67334E8116144E3200A58302 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		674ADC1C1B5C89010006A23C /* libPrinter_160.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPrinter_160.a; sourceTree = "<group>"; };
 		674ADC201B5C89010006A23C /* CallbackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallbackData.h; sourceTree = "<group>"; };
@@ -205,6 +207,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		671DD9E61B81D953007A41CE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				671DD9E71B81D9B2007A41CE /* UIViewController+Utils.h */,
+				671DD9E81B81D9B2007A41CE /* UIViewController+Utils.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		674ADC1B1B5C89010006A23C /* PrinterLibrary */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +421,7 @@
 		67D17B6215AE7522001ED592 = {
 			isa = PBXGroup;
 			children = (
+				671DD9E61B81D953007A41CE /* Helpers */,
 				6783F44A1B819EC4004F8DDD /* Images.xcassets */,
 				67538DC71B65E031006D0AFB /* HandyPOS.entitlements */,
 				674ADC311B5C8C050006A23C /* Print */,
@@ -437,7 +449,6 @@
 			isa = PBXGroup;
 			children = (
 				671DD9E41B81CF9B007A41CE /* libsqlite3.0.tbd */,
-				671DD9E21B81CE9A007A41CE /* libsqlite3.tbd */,
 				671DD9E01B81CE79007A41CE /* libPrinter_160.a */,
 				67BFE54C1679AFF30016B398 /* CFNetwork.framework */,
 				67334E8116144E3200A58302 /* MessageUI.framework */,
@@ -681,6 +692,7 @@
 				67CBE7DC167572F100E5D065 /* FMResultSet.m in Sources */,
 				67CBE7DB167572ED00E5D065 /* FMDatabase.m in Sources */,
 				67D17B7E15AE7522001ED592 /* main.m in Sources */,
+				671DD9E91B81D9B2007A41CE /* UIViewController+Utils.m in Sources */,
 				67D17B8215AE7522001ED592 /* AppDelegate.m in Sources */,
 				67D17BAC15AE7637001ED592 /* DataModels.m in Sources */,
 				67BA27B215B64F14002AA25A /* SyoukeiViewController.m in Sources */,
@@ -847,7 +859,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Printer\"",
-					"\"$(SRCROOT)/PrinterLibrary\"",
 					"$(PROJECT_DIR)/Printer",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "POSCO.${PRODUCT_NAME:rfc1034identifier}";
@@ -883,7 +894,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Printer\"",
-					"\"$(SRCROOT)/PrinterLibrary\"",
 					"$(PROJECT_DIR)/Printer",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "POSCO.${PRODUCT_NAME:rfc1034identifier}";

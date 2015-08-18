@@ -7,12 +7,14 @@
 //
 
 #import "ConnectionManager.h"
+#import "MainViewController.h"
+#import "UIViewController+Utils.h"
 #import "AFNetworking.h"
 #import <AFNetworking/AFNetworking.h>
 
 @implementation ConnectionManager
 
-+ (void) fetchDBFile : (NSString *)dbfileName
++ (void) fetchDBFile : (NSString *)dbfileName fromViewController : (UIViewController*) parentView
 {
 //    NSString * dbURI = @"http://127.0.0.1:3000";
 //    NSString * dbURI = @"http://posco-cloud.sakura.ne.jp/TEST";
@@ -26,6 +28,8 @@
                                  cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                              timeoutInterval:30.0];
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:myRequest];
+    
+    
     
     // sqliteの保存場所を指定
     NSString *documentDir;
@@ -47,16 +51,27 @@
         NSLog(@"Error ->: %@", [error localizedDescription]);
     }];
     
+//    UIProgressView * progressbar  = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
+    UIProgressView * progressbar  = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
+    progressbar.frame = CGRectMake(10, 100, 200, 10);
+    [[parentView view] addSubview:progressbar];
+    
+    [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
+        double percentDone = (double)totalBytesRead / (double)totalBytesExpectedToRead;
+        NSLog(@"progress updated(percentDone) : %f", percentDone);
+        progressbar.progress = percentDone;
+    }];
     [operation start];
+    [operation waitUntilFinished];
 }
 
-+ (void) fetchAllDB {
++ (void) fetchAllDB : (UIViewController *) parentView {
 //    [self fetchDBFile:@"BurData.sqlite"];
 //    [self fetchDBFile:@"UpdateData.sqlite"];
     
     /* ONLY MASTER needs update */
-    [self fetchDBFile:@"Master.sqlite"];
-    [self fetchDBFile:@"Azukari.sqlite"];
+    [self fetchDBFile:@"Master.sqlite" fromViewController : parentView];
+    [self fetchDBFile:@"Azukari.sqlite" fromViewController : parentView];
     
 }
 

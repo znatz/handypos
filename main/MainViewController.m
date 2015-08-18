@@ -138,26 +138,26 @@
             break;
         case 1:
             
-            [ConnectionManager fetchAllDB];
-            
-            allSeisan = [DataUpdate getAllSeisan];
-            
-            NSMutableArray *idArry;
-            for(int i=0; i<idArry.count; i++){
-                
-                Seisan * u = allSeisan[i];
-                
-                [DataUpdate saveToUriageWithTime:u._time
-                                           re_no:u._re_no
-                                              ID:u._ID
-                                           title:u._title
-                                           price:u._price
-                                            kosu:u._kosu];
-            }
-            
-            
+            [ConnectionManager fetchAllDB : self];
+//            
+//            allSeisan = [DataUpdate getAllSeisan];
+//            
+//            NSMutableArray *idArry;
+//            for(int i=0; i<idArry.count; i++){
+//                
+//                Seisan * u = allSeisan[i];
+//                
+//                [DataUpdate saveToUriageWithTime:u._time
+//                                           re_no:u._re_no
+//                                              ID:u._ID
+//                                           title:u._title
+//                                           price:u._price
+//                                            kosu:u._kosu];
+//            }
+//            
+//            
            
-            allNebiki = [DataUpdate getAllNebiki];
+//            allNebiki = [DataUpdate getAllNebiki];
             
             
         UIAlertView *av =[[UIAlertView alloc] initWithTitle : @"完了"

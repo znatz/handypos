@@ -167,7 +167,8 @@
     /* ----------------------------------  Retrieve context          -------------------------*/
     UIButton * clickedButton    = (UIButton *) sender;
     int selectedRow             = clickedButton.tag % 1000;
-    NSString * selectedGoodsID  = [NSString stringWithFormat:@"%d",(clickedButton.tag - selectedRow)/1000];
+    int selectGoodsID_int       = (int)(clickedButton.tag - selectedRow) / 1000;
+    NSString * selectedGoodsID  = [NSString stringWithFormat:@"%d", selectGoodsID_int];
     /* ----------------------------------  END : Retrieve context    -------------------------*/
     
     
