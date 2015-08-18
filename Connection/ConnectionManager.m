@@ -14,10 +14,62 @@
 
 @implementation ConnectionManager
 
++ (void) fetchDBFile1 : (NSString *)dbfileName fromViewController : (UIViewController*) parentView
+{
+    NSString * dbURI = @"http://posco-cloud.sakura.ne.jp/TEST/IOS/OrderSystem/app/database";
+
+    NSString *url    = [NSString stringWithFormat:@"%@/%@", dbURI, dbfileName];
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    // ダウンロード先のURLを設定したNSURLRequestインスタンスを生成する
+//    NSMutableURLRequest *request = [manager.requestSerializer requestWithMethod:@"GET" URLString:url parameters:nil];
+    NSError * error;
+    NSMutableURLRequest *request = [[manager requestSerializer] requestWithMethod:@"GET" URLString:url parameters:nil error:&error];
+    
+    // ダウンロード処理を実行するためのAFHTTPRequestOperationインスタンスを生成する
+    AFHTTPRequestOperation *operation = [manager HTTPRequestOperationWithRequest:request
+                                                                         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                                                             // ダウンロードに成功したらコンソールに成功した旨を表示する
+                                                                             NSLog(@"ダウンロード完了！");
+                                                                         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                                                             // エラーの場合はエラーの内容をコンソールに出力する
+                                                                             NSLog(@"Error: %@", error);
+                                                                         }];
+    
+    
+    // データを受信する度に実行される処理を設定する
+    [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
+        // ダウンロード中の進捗状況をコンソールに表示する
+        NSLog(@"bytesRead: %@, totalBytesRead: %@, totalBytesExpectedToRead: %@, progress: %@",
+              @(bytesRead),
+              @(totalBytesRead),
+              @(totalBytesRead),
+              @((float)totalBytesRead / totalBytesExpectedToRead));
+    }];
+    
+    // <Application_Home>/Documentsディレクトリのパスを取得する
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentDirectory = paths[0];
+    
+    // <Application_Home>/Documents/test.zip
+    NSString *filePath = [documentDirectory stringByAppendingPathComponent:dbfileName];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:filePath]) {
+        [fileManager removeItemAtPath:filePath error:nil];
+    }
+    
+    // ファイルの保存先を「<Application_Home>/Documents/test.zip」に指定する
+    operation.outputStream = [NSOutputStream outputStreamToFileAtPath:filePath append:NO];
+    
+    // ダウンロードを開始する
+    [manager.operationQueue addOperation:operation];
+}
+
+
 + (void) fetchDBFile : (NSString *)dbfileName fromViewController : (UIViewController*) parentView
 {
-//    NSString * dbURI = @"http://127.0.0.1:3000";
-//    NSString * dbURI = @"http://posco-cloud.sakura.ne.jp/TEST";
     NSString * dbURI = @"http://posco-cloud.sakura.ne.jp/TEST/IOS/OrderSystem/app/database";
 
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", dbURI, dbfileName]];
@@ -28,7 +80,6 @@
                                  cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                              timeoutInterval:30.0];
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:myRequest];
-    
     
     
     // sqliteの保存場所を指定
@@ -58,21 +109,19 @@
     
     [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
         double percentDone = (double)totalBytesRead / (double)totalBytesExpectedToRead;
-        NSLog(@"progress updated(percentDone) : %f", percentDone);
+//        NSLog(@"progress updated(percentDone) : %f", percentDone);
         progressbar.progress = percentDone;
     }];
     [operation start];
     [operation waitUntilFinished];
+    progressbar.hidden = YES;
 }
 
 + (void) fetchAllDB : (UIViewController *) parentView {
-//    [self fetchDBFile:@"BurData.sqlite"];
-//    [self fetchDBFile:@"UpdateData.sqlite"];
-    
-    /* ONLY MASTER needs update */
-    [self fetchDBFile:@"Master.sqlite" fromViewController : parentView];
-    [self fetchDBFile:@"Azukari.sqlite" fromViewController : parentView];
-    
+//    [self fetchDBFile:@"Master.sqlite" fromViewController : parentView];
+//    [self fetchDBFile:@"Azukari.sqlite" fromViewController : parentView];
+    [self fetchDBFile1:@"Master.sqlite" fromViewController : parentView];
+    [self fetchDBFile1:@"Azukari.sqlite" fromViewController : parentView];
 }
 
 
