@@ -23,7 +23,10 @@
     UIView * dimview = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, parentView.view.frame.size.width, parentView.view.frame.size.height)];
     [dimview setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.5f]];
     dimview.tag = 10;
-    [[parentView view] addSubview:dimview];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[parentView view] addSubview:dimview];
+    });
+    
     
     NSString * dbURI = @"http://posco-cloud.sakura.ne.jp/TEST/IOS/OrderSystem/app/database";
 
@@ -39,9 +42,21 @@
     // ダウンロード処理を実行するためのAFHTTPRequestOperationインスタンスを生成する
     AFHTTPRequestOperation *operation = [manager HTTPRequestOperationWithRequest:request
                                                                          success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//                                                                             NSLog(@"ダウンロード完了！");
+                                                                             dispatch_async(dispatch_get_main_queue(), ^{
+                                                                                 for (UIView * v in parentView.view.subviews) {
+                                                                                     if (v.tag == 10) {
+                                                                                         [v removeFromSuperview];
+                                                                                     }
+                                                                                 }
+                                                                             });
                                                                          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                                                             NSLog(@"Error: %@", error);
+                                                                             dispatch_async(dispatch_get_main_queue(), ^{
+                                                                                 for (UIView * v in parentView.view.subviews) {
+                                                                                     if (v.tag == 10) {
+                                                                                         [v removeFromSuperview];
+                                                                                     }
+                                                                                 }
+                                                                             });
                                                                          }];
     
     
@@ -49,31 +64,26 @@
     // データを受信する度に実行される処理を設定する
     [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
         
-        // ダウンロード中の進捗状況をコンソールに表示する
-        for (UIView * v in [parentView view].subviews) {
-            if ([v isKindOfClass:[DALabeledCircularProgressView class]]) {
-                [v removeFromSuperview];
-            }
-        }
-        
-        double percentDone = (double)totalBytesRead / (double)totalBytesExpectedToRead ;
-        DALabeledCircularProgressView * progressbar = [[DALabeledCircularProgressView alloc] initWithFrame:CGRectMake([parentView view].frame.size.width/5, [parentView view].frame.size.height/5, 200.0f, 200.0f)];
-        
-        progressbar.roundedCorners = YES;
-        progressbar.trackTintColor = [UIColor brownColor];
-        progressbar.progressTintColor = [UIColor whiteColor];
-        progressbar.progress = percentDone;
-        progressbar.thicknessRatio = 0.1f;
-        progressbar.progressLabel.text = [NSString stringWithFormat:@"%d％", (int)round(percentDone * 100) ];
-
-        if (percentDone < 1) [[parentView view] addSubview:progressbar];
-        if (percentDone == 1) {
-            for (UIView * v in parentView.view.subviews) {
-                if (v.tag == 10) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // ダウンロード中の進捗状況をコンソールに表示する
+            for (UIView * v in [parentView view].subviews) {
+                if ([v isKindOfClass:[DALabeledCircularProgressView class]]) {
                     [v removeFromSuperview];
                 }
             }
-        };
+            
+            double percentDone = (double)totalBytesRead / (double)totalBytesExpectedToRead ;
+            DALabeledCircularProgressView * progressbar = [[DALabeledCircularProgressView alloc] initWithFrame:CGRectMake([parentView view].frame.size.width/5, [parentView view].frame.size.height/5, 200.0f, 200.0f)];
+            
+            progressbar.roundedCorners = YES;
+            progressbar.trackTintColor = [UIColor brownColor];
+            progressbar.progressTintColor = [UIColor whiteColor];
+            progressbar.progress = percentDone;
+            progressbar.thicknessRatio = 0.1f;
+            progressbar.progressLabel.text = [NSString stringWithFormat:@"%d％", (int)round(percentDone * 100) ];
+
+            if (percentDone < 1) [[parentView view] addSubview:progressbar];
+        });
     }];
     
     
@@ -97,19 +107,10 @@
     // ダウンロードを開始する
     [manager.operationQueue addOperation:operation];
     
-    
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+//    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
     [operation waitUntilFinished];
-    /*
-    UIProgressView * progressbar  = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
-    progressbar.frame = CGRectMake(10, 100, 200, 10);
-    [[parentView view] addSubview:progressbar];
-    [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
-        double percentDone = (double)totalBytesRead / (double)totalBytesExpectedToRead;
-        progressbar.progress = percentDone;
-    }];
-     */
+
 }
 
 + (void) fetchAllDB : (UIViewController *) parentView {

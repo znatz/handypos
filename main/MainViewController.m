@@ -150,12 +150,14 @@
 -(void)getDB:(id)sender {
     [ConnectionManager fetchAllDB : self];
     
-    UIAlertView *av =[[UIAlertView alloc] initWithTitle : @"完了"
-                                                message : @"データ更新が完了しました。"
-                                               delegate : self
-                                      cancelButtonTitle : nil
-                                      otherButtonTitles : @"OK", nil];
-    [av show];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIAlertView *av =[[UIAlertView alloc] initWithTitle : @"完了"
+                                                    message : @"データ更新が完了しました。"
+                                                   delegate : self
+                                          cancelButtonTitle : nil
+                                          otherButtonTitles : @"OK", nil];
+        [av show];
+    });
                 
     
 }
